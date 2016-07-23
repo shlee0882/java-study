@@ -32,9 +32,9 @@ C:\Program Files\Java\jdk1.8.0_91\bin/javadoc.exe 은 자바의 클래스, 메�
 
 ##이클립스와 웹브라우저 크롬 연동하기
 
-#### general -> web browser -> use external web browser
-#### name: chrome
-#### location: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+- general -> web browser -> use external web browser
+- name: chrome
+- location: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 
 ------------------------------------------------------------------------------------------------
 
@@ -78,6 +78,7 @@ java resources src -> new -> servlet -> constructors from superclass 체크 해�
 
 어노테이션@ 을 보고 서블릿클래스구나 하고 알아냄.
 
+-------------------------------------------------
 - 배운 것 정리 -
 
 1. jdk, 이클립스 설정
