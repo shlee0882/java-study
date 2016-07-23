@@ -74,9 +74,13 @@ persistence, servlet,jsp,websocket,jaxb,ws(web service)
 
 jaxb 는 xml -> java 객체, java 객체 -> xml 바인딩 변환해줌
 
-new-> web-> dynamic web project -> generate web.xml 체크 ->
+---------------------------------------------------------------------
 
-java resources src -> new -> servlet -> constructors from superclass 체크 해제 
+##서블릿 프로젝트 생성하기
+
+- new-> web-> dynamic web project -> generate web.xml 체크 ->
+
+- java resources src -> new -> servlet -> constructors from superclass 체크 해제 
 
 어노테이션@ 을 보고 서블릿클래스구나 하고 알아냄.
 
