@@ -1,4 +1,4 @@
-자바는 2개로 구분된다.
+##자바의 2개 구분
 
 1. JDK(java development kit)
  - for java developer
@@ -14,7 +14,6 @@ Window -> Show View -> Navigator 로 bin > chap01 > .class 파일 생성된 것 
 입력 | 결과
 ------------------|-----------------
 main ctrl+space bar | public static void main(String[] args)
-
 sysout ctrl+space bar | System.out.println(); 
 
 이클립스에서 해당 클래스나 메서드의 소스보기 | f3
