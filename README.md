@@ -20,7 +20,7 @@ Window -> Show View -> Navigator 로 bin > chap01 > .class 파일 생성된 것 
 main ctrl+space bar | public static void main(String[] args)
 sysout ctrl+space bar | System.out.println(); 
 이클립스에서 해당 클래스나 메서드의 소스보기 | f3
-*attach Source -> external location -> jdk -> src.zip -> f3 *
+*attach Source -> external location -> jdk -> src.zip -> f3*
 
 C:\Program Files\Java\jdk1.8.0_91\bin/javadoc.exe 은 자바의 클래스, 메서드, 인터페이스에 대한 주석 설명을 doc 형태로 바꿔줘서
 
