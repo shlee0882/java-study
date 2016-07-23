@@ -1,95 +1,107 @@
- jdk(java development kit)
+ìë°”ëŠ” 2ê°œë¡œ êµ¬ë¶„ëœë‹¤.
+
+1. JDK(java development kit)
  - for java developer
 
- jre(java runtime environment)
+2. JRE(java runtime environment)
  - for java user
 
  IDE(Integrated development Environment)
  - eclipse
 
-Window -> Show View -> Navigator
+Window -> Show View -> Navigator ë¡œ bin > chap01 > .class íŒŒì¼ ìƒì„±ëœ ê²ƒ í™•ì¸ê°€ëŠ¥
 
-main 
-ctrl+space bar ¸ŞÀÎ¸Ş½ÃÁö 
+ì…ë ¥ | ê²°ê³¼
+------------------|-----------------
+main ctrl+space bar | public static void main(String[] args)
 
-sysout 
-ctrl+space bar System.out.println(); 
+sysout ctrl+space bar | System.out.println(); 
 
-ÀÌÅ¬¸³½º 
-¼Ò½ºº¸°í ½ÍÀ¸¸é f3
+ì´í´ë¦½ìŠ¤ì—ì„œ í•´ë‹¹ í´ë˜ìŠ¤ë‚˜ ë©”ì„œë“œì˜ ì†ŒìŠ¤ë³´ê¸° | f3
 
-attach Source -> external location -> jdk -> src.zip -> f3 
+*attach Source -> external location -> jdk -> src.zip -> f3 *
 
-½Ã½ºÅÛ Å¬·¡½º¿¡ ÁÖ¼®ÀÌ ¸¹ÀÌ ´Ş·ÁÀÖ´Âµ¥ 
+C:\Program Files\Java\jdk1.8.0_91\bin/javadoc.exe ì€ ìë°”ì˜ í´ë˜ìŠ¤, ë©”ì„œë“œ, ì¸í„°í˜ì´ìŠ¤ì— ëŒ€í•œ ì£¼ì„ ì„¤ëª…ì„ doc í˜•íƒœë¡œ ë°”ê¿”ì¤˜ì„œ
 
-jAVA¹Ø¿¡ 
+ì´í´ë¦½ìŠ¤ì—ì„œ í™•ì¸í• ìˆ˜ ìˆë‹¤.
 
-C:\Program Files\Java\jdk1.8.0_91\bin/javadoc.exe
+ì›¹ìœ¼ë¡œë„ ìë°”ì— ëŒ€í•œ api docì„ í™•ì¸í• ìˆ˜ ìˆë‹¤.
 
+[JAVA SE API](https://docs.oracle.com/javase/8/docs/api/) https://docs.oracle.com/javase/8/docs/api/
 
-ÀÚ¹Ù Å¬·¡½º ¼³¸íÇÏ´Â ÁÖ¼® ´Ş°í javadoc¶ó´Â ÇÁ·Î±×·¥ ½ÇÇàÇÏ¸é 
+##ì´í´ë¦½ìŠ¤ì™€ ì›¹ë¸Œë¼ìš°ì € í¬ë¡¬ ì—°ë™í•˜ê¸°
 
-Å¬·¡½º ¼³¸í ¸Ş¼­µå ¼³¸í ÁÖ¼® ´Ş·ÁÀÖ´Âµ¥ 
+#### general -> web browser -> use external web browser
+#### name: chrome
+#### location: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
 
-java8 api doc
-
-general -> web browser -> use external web browser
-
-name: chrome
-location: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
-
-·ÎÄÃ¿¡¼­ µ¿ÀÛÇÏ´Â ÀÚ¹Ù ¾îÇÃ¸®ÄÉÀÌ¼Ç ¸¸µé¼ö ÀÖ´Ù.
+------------------------------------------------------------------------------------------------
 
 Java SE(Standard Edition)
 
-- awt(GUI), core, JDBC(java applicationÀ» sql·Î ¼öÁ¤ÇÒ¶§ ÇÊ¿äÇÔ) JDBC(Java Database Connectivity) -> Áö±İÀº mybatis(DB¿¬µ¿ÇÒ¶§ ¾¸) ¸¹ÀÌ ¾¸
- JNDI(java naming directory interface) ip¼­¹ö ¼ıÀÚÁÖ¼Ò¸¦ ¿µ¹®À¸·Î µµ¸ŞÀÎ ¿¬µ¿
+- awt(GUI), core, JDBC(java applicationì„ sqlë¡œ ìˆ˜ì •í• ë•Œ í•„ìš”í•¨) JDBC(Java Database Connectivity) -> ì§€ê¸ˆì€ mybatis(DBì—°ë™í• ë•Œ ì”€) ë§ì´ ì”€
+ JNDI(java naming directory interface) ipì„œë²„ ìˆ«ìì£¼ì†Œë¥¼ ì˜ë¬¸ìœ¼ë¡œ ë„ë©”ì¸ ì—°ë™
 
-- swing(gui) ÀÚ¹Ù gui È­¸é±¸¼ºÀº swing, xml(extensible markup language) parsing(sax,dom)
+- swing(gui) ìë°” gui í™”ë©´êµ¬ì„±ì€ swing, xml(extensible markup language) parsing(sax,dom)
 
 ------------------------------------------------------------------------------------------------
 
 
- Java EE(Enterprise Edition)
+Java EE(Enterprise Edition)
 
+1. ì¸í„°í˜ì´ìŠ¤ ìœ„ì£¼ êµ¬ì„±
+2. ìŠ¤íƒ ë‹¤ë“œ ì—ë””ì…˜ì€ í´ë˜ìŠ¤ë§Œ ë§ê³  í•´ë‹¹ ê¸°ëŠ¥ ë‹¤ ë¶€ì—¬ ë˜ì–´ìˆìŒ.
+3. ì—”í„°í”„ë¼ì´ì¦ˆ ì—ë””ì…˜ì€ ì¸í„°í˜ì´ìŠ¤ë§Œ ë˜ì–´ìˆë‹¤ëŠ” ê²ƒì€ ì´ëŸ°ì´ëŸ°ê¸°ëŠ¥ì´ ìˆë‹¤ ì •ì˜(ì„ ì–¸)ë§Œ ë˜ì–´ìˆë‹¤.
 
-ejb ÀÎÅÍÆäÀÌ½º¸¸ ¸¸´Ù.
-½ºÅÄ´Ùµå ¿¡µğ¼ÇÀº Å¬·¡½º¸¸ ¸¹°í ÇØ´ç ±â´É ´Ù ºÎ¿© µÇ¾îÀÖÀ½.
-¿£ÅÍÇÁ¶óÀÌÁî ¿¡µğ¼ÇÀº ÀÎÅÍÆäÀÌ½º¸¸ µÇ¾îÀÖ´Ù´Â °ÍÀº ÀÌ·±ÀÌ·±±â´ÉÀÌ ÀÖ´Ù Á¤ÀÇ(¼±¾ğ)¸¸ µÇ¾îÀÖ´Ù.
+was(web application server)ëŠ” êµ¬í˜„í•´ì¤€ë‹¤.
 
-was(web application server)´Â ±¸ÇöÇØÁØ´Ù.
+ì œìš°ìŠ¤ - ê³µê³µê¸°ê´€ ì‚¬ìš©
+ì›¹ë¡œì§, ì›¹ìŠ¤í”¼ì–´ - ì€í–‰ìª½ì€ ibm was ì‚¬ìš©
 
-Á¦¿ì½º - °ø°ø±â°ü »ç¿ë
-À¥·ÎÁ÷, À¥½ºÇÇ¾î - ÀºÇàÂÊÀº ibm was »ç¿ë
-
-À¥¼­¹ö´Â ´Ü¼øÇÑ html ½ÇÇà¸¸
-ÀÚ¹Ù ±â¹İ À¥¼­¹ö ±¸µ¿ À§ÇØ¼± was ¿ªÇÒ ÇÊ¿ä
+ì›¹ì„œë²„ëŠ” ë‹¨ìˆœí•œ html ì‹¤í–‰ë§Œ
+ìë°” ê¸°ë°˜ ì›¹ì„œë²„ êµ¬ë™ ìœ„í•´ì„  was ì—­í•  í•„ìš”
 
 EJB, faces(web application framework), json
 
-json°ú xmlÀº ºñ½ÁÇÔ.
-xmlÀº ¹«°Ì°í ÆÄ½ÌÇØ¾ßÇÔ. addressÅÂ±×¸¦ ¾²°í ÅÂ±× »çÀÌ¿¡ µ¥ÀÌÅÍ Áı¾î³Ö¾î¼­ »ç¿ëÇØ¾ßÇÔ. µ¥ÀÌÅÍ ¾ç ¸¹¾ÆÁö¸é ÆÄ½ÌÇØ¾ß ÇÏ´Â ºÎ´ãÀÌ ÀÖÀ½.
-jsonÀº °¡º±°Ô interchange Ç¥ÁØ Æ÷¸Ë Á¦°ø
+jsonê³¼ xmlì€ ë¹„ìŠ·í•¨.
+xmlì€ ë¬´ê²ê³  íŒŒì‹±í•´ì•¼í•¨. addressíƒœê·¸ë¥¼ ì“°ê³  íƒœê·¸ ì‚¬ì´ì— ë°ì´í„° ì§‘ì–´ë„£ì–´ì„œ ì‚¬ìš©í•´ì•¼í•¨. ë°ì´í„° ì–‘ ë§ì•„ì§€ë©´ íŒŒì‹±í•´ì•¼ í•˜ëŠ” ë¶€ë‹´ì´ ìˆìŒ.
+jsonì€ ê°€ë³ê²Œ interchange í‘œì¤€ í¬ë§· ì œê³µ
 
 persistence, servlet,jsp,websocket,jaxb,ws(web service)
 
-jaxb ´Â xml -> java °´Ã¼, java °´Ã¼ -> xml ¹ÙÀÎµù º¯È¯ÇØÁÜ
+jaxb ëŠ” xml -> java ê°ì²´, java ê°ì²´ -> xml ë°”ì¸ë”© ë³€í™˜í•´ì¤Œ
 
-new-> web-> dynamic web project -> generate web.xml Ã¼Å© ->
+new-> web-> dynamic web project -> generate web.xml ì²´í¬ ->
 
-java resources src -> new -> servlet -> constructors from superclass Ã¼Å© ÇØÁ¦ 
+java resources src -> new -> servlet -> constructors from superclass ì²´í¬ í•´ì œ 
 
-¾î³ëÅ×ÀÌ¼Ç@ À» º¸°í ¼­ºí¸´Å¬·¡½º±¸³ª ÇÏ°í ¾Ë¾Æ³¿.
+ì–´ë…¸í…Œì´ì…˜@ ì„ ë³´ê³  ì„œë¸”ë¦¿í´ë˜ìŠ¤êµ¬ë‚˜ í•˜ê³  ì•Œì•„ëƒ„.
 
-- ¹è¿î °Í Á¤¸® -
+- ë°°ìš´ ê²ƒ ì •ë¦¬ -
 
-jdk, ÀÌÅ¬¸³½º ¼³Á¤
-api doc Áñ°ÜÃ£±â
-ÀÚ¹ÙÇÁ·ÎÁ§Æ® »ı¼º
-java standard edition Á¦°øÇÏ´Â ±â¼ú(awt,swing,lang,jdbc,jndi,xml parsing)
-java enterprise edition Á¦°øÇÏ´Â ±â¼ú(ejb,servlet,jsp)
-ee ±¸Çö
-¼­ºí¸´, jsp ±¸ÇöÇÏ·Á¸é was(runÇÒ¼öÀÖ´Â È¯°æ Á¦°ø ÅèÄ¹ »ç¿ë)
-was ÀÌ¿ë ¼­ºí¸´ ½ÇÇà, ¾î³ëÅ×ÀÌ¼Ç,
+1. jdk, ì´í´ë¦½ìŠ¤ ì„¤ì •
+2. api doc ì¦ê²¨ì°¾ê¸°
+3. ìë°”í”„ë¡œì íŠ¸ ìƒì„±
+4. java standard edition ì œê³µí•˜ëŠ” ê¸°ìˆ (awt,swing,lang,jdbc,jndi,xml parsing) ê°œë… 
+5. java enterprise edition ì œê³µí•˜ëŠ” ê¸°ìˆ (ejb,servlet,jsp) ê°œë…
+6. ee êµ¬í˜„
+7. ì„œë¸”ë¦¿, jsp êµ¬í˜„í•˜ë ¤ë©´ was(runí• ìˆ˜ìˆëŠ” í™˜ê²½ ì œê³µ í†°ìº£ ì‚¬ìš©) ì´í´ë¦½ìŠ¤ì™€ í¬ë¡¬ ì—°ê²°, was ì—°ë™
+8. was ì´ìš© ì„œë¸”ë¦¿ ì‹¤í–‰, 
+
+  1. ì–´ë…¸í…Œì´ì…˜ @WebServlet("/HelloServlet") ë°©ì‹, 
+
+  2. web.xml ìˆ˜ì • ë°©ì‹ 
+  
+  <!-- Servlet í´ë˜ìŠ¤ ì„¤ì • -->
+  <servlet>
+   <servlet-name>Hello</servlet-name>
+  	<servlet-class>chap01.HelloServlet</servlet-class>
+  </servlet>
+  <!-- ë¸Œë¼ìš°ì € ìƒì—ì„œ ì„œë¸”ë¦¿ ì‹¤í–‰ë ë•Œ ìš”ì²­í•´ì•¼í•œë‹¤. ë¶€ë¥´ê³ ì í• ë•Œ í˜¸ì¶œí•˜ëŠ” url ì§€ì •í•˜ëŠ”ê²ƒ. -->
+  <!-- ì„œë¸”ë¦¿ì´ë¦„ì€ ë™ì¼í•˜ê²Œ -->
+  <servlet-mapping>
+  	<servlet-name>Hello</servlet-name>
+  	<url-pattern>/hello1</url-pattern>
+  </servlet-mapping>
 
 
