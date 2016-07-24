@@ -1,7 +1,5 @@
 [날짜 선택화면](../README.md)
 
-[7/22 1일차]()
-
 ##자바의 2개 구분
 
 1. JDK(java development kit)
