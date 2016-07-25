@@ -168,7 +168,7 @@ nums[0] = 10;, nums[1] = 20;, nums[2] = 30; 을 선언하면 heap 영역에 차�
 
 - reference type
 
-(../resources/referece_array.JPG)
+![Github Download](../../resources/referece_array.JPG)
 
 Customer[] custs; // 선언
 custs = new Customer[3]; // 초기화
