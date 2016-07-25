@@ -139,4 +139,4 @@ static import 라는게 있다.
 
 매번 쓰기 귀찮으므로 **import static org.junit.Assert.*;**
 
-assertEqual(), assertSame()
+assertEqual(), assertSame()로 클래스 없이 호출
