@@ -64,9 +64,11 @@ Client 계층 | Presentation 계층 | Service 계층 | Data Access 계층 | DAO
 
 ##mvc 패턴 - Model2Architecture 이다.
 
-model - java
-view - html,jsp
-controller - servlet
+- model - java
+
+- view - html,jsp
+
+- controller - servlet
 
 중재자 역할 servlet, 자바쪽에서 넘겨준 데이터 사용은 jsp
 
@@ -140,3 +142,45 @@ static import 라는게 있다.
 매번 쓰기 귀찮으므로 **import static org.junit.Assert.*;**
 
 assertEqual(), assertSame()로 클래스 없이 호출
+
+
+-----------------------------------------------------------------------------------------
+
+##배열
+
+- primitive type(기본형)
+
+int[] nums; // 선언
+nums = new int[3]; // 초기화
+
+int[] nums = new int[3]; // 선언 및 초기화
+
+stack heap
+
+스택에 nums라는 방이 생김
+레퍼런스타입은 클래스, 인터페이스, 배열, enumeration 
+
+heap 영역에 allocation 생김 int nums[3] 타입의 3개 생기고 기본값이 0 인 방이 3개 만들어짐.
+nums[0] = 10;, nums[1] = 20;, nums[2] = 30; 을 선언하면 heap 영역에 차례대로 저장됨.
+
+
+##객체를 참조하는 배열
+
+- reference type
+
+Customer[] custs; // 선언
+custs = new Customer[3]; // 초기화
+
+Customer[] custs = new Customer[3]; // 선언 및 초기화
+
+custs는 배열타입이므로 초기값 null로 스택에 저장, 다음 new를 만나니깐 heap 영역에 custs 객체영역 생성 custs[0], custs[1], custs[2], 0x10 주소 할당
+custs[0] = custmoer 타입
+
+custs[0] = new Customer("홍길동");
+custs[1] = new Customer("둘리");
+custs[2] = new Customer("또치");
+
+customer 객체 생성되고 name이 둘리 생성 다음 배열에 주소가 들어가게 됨. 
+
+
+
