@@ -42,7 +42,9 @@ dynamic하게 할수 있는게 servlet/jsp,php,asp.NET(MS) 기술이 있다.
 Web Application Architecture
 
 논리적으로 역할 분리
- 
+
+##각 계층 정리
+
 web browser -요청-> 
 
 Client 계층 | Presentation 계층 | Service 계층 | Data Access 계층 | DAO
