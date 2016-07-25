@@ -182,5 +182,25 @@ custs[2] = new Customer("또치");
 
 customer 객체 생성되고 name이 둘리 생성 다음 배열에 주소가 들어가게 됨. 
 
+source -> generate tostring()
+for ctrl+space bar iterate over array
+
+##로직 메소드로 빼기
+
+refactor -> extract method -> 메소드로 나옴.
+
+- 기호는 private 
+private string name;
+generate constructor using filed
 
 
+------------------------------------------------------------------------------------------------------
+
+정리
+
+1. jUnit
+2. primitive reference type
+3. statck, heap,
+4. equals 메서드 오버라이딩하는 소스 작성
+5. @Test @Ignore @Before
+6. customer type 형태의 array 만듬.
