@@ -74,6 +74,8 @@ controller - servlet
 
 아키텍처를 다 설계 해줄테니 개발자는 화면ui나 biz로직을 생각해라.
 
+##그 외
+
 - 테이블 안의 DB 읽고 쓰는것, xml 데이터 받아 파싱한다던지 JDBC,XML
 
 - JDBC라는 API를 쓰거나 편하게 개발할수 있는 MYBATIS 쓴다.
