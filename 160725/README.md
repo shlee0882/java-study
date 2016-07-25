@@ -89,3 +89,53 @@ controller - servlet
 - Service 계층 Biz 로직 
 업무별로 복잡한 로직있음.(주식, 금리, 환율)
 
+
+##프로젝트 zip 파일 import 해서 추가하기
+
+import -> import -> general -> exisiting projects into workspace -> select archive file(zip 파일 선택) -> finish
+
+
+##데이터 타입 분류
+
+##예외
+
+- checked exception - IOexception(try catch로 반드시 예외처리해야함), SQLException
+- runtimeexception 
+
+
+##object
+
+source -> generate constructor using fields 생성자 사용
+source -> generate getter setter 게터 세터 생성
+
+toggle block selection mode(alt + shift + a) 커서 여러개 선택하고 싶을때 사용
+
+source -> override/implement methods
+
+메서드 선언만 같이 
+
+Customer cust1 = new Customer("홍길동"); 스택에 cust1의 null이 쌓이고 힙에 0x100의 customer 공간이 만들어짐
+customer 안에 name 속성 홍길동 들어감.
+
+string은 레퍼런스 타입이어 힙 안에 객체가 2개가 생성
+
+----------------------------------------------------------------------------------------
+
+##jUnit
+
+프로젝트 선택후 build path -> configure build path -> library -> add library -> jUnit
+
+junit4 api doc
+
+static import 라는게 있다.
+
+'Assert'.asserEqual(), 'Assert'.assertSame()
+
+클래스명 계속 부르는 문제 발생
+
+import static org.junit.Assert.assertEqual; 이렇게 쓰면 클래스명 생략 가능하다.
+import static org.junit.Assert.assertSame;
+
+매번 쓰기 귀찮으므로 import static org.junit.Assert.*;
+
+assertEqual(), assertSame()
