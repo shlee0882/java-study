@@ -126,7 +126,7 @@ string은 레퍼런스 타입이어 힙 안에 객체가 2개가 생성
 
 프로젝트 선택후 build path -> configure build path -> library -> add library -> jUnit
 
-junit4 api doc
+[junit4 api doc](http://junit.sourceforge.net/javadoc/)
 
 static import 라는게 있다.
 
@@ -134,9 +134,9 @@ static import 라는게 있다.
 
 클래스명 계속 부르는 문제 발생
 
-import static org.junit.Assert.assertEqual; 이렇게 쓰면 클래스명 생략 가능하다.
-import static org.junit.Assert.assertSame;
+**import static org.junit.Assert.assertEqual;** 이렇게 쓰면 클래스명 생략 가능하다.
+**import static org.junit.Assert.assertSame;**
 
-매번 쓰기 귀찮으므로 import static org.junit.Assert.*;
+매번 쓰기 귀찮으므로 **import static org.junit.Assert.*;**
 
 assertEqual(), assertSame()
