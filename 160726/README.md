@@ -11,7 +11,7 @@ run configurations -> Arguments 탭 -> Program arguments MONDAY 입력
 ##OOP
 속성과 동작, 필드와 메서드
 
-[!uml](../resources/uml.JPG)
+![uml](../resources/uml.JPG)
 
 - 집합관계(Aggregation) : 자동차 구성요소 - 엔진, 타이어, 핸들
 1:N 관계 자동차1 N개의 객체 정보
