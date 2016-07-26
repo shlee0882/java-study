@@ -11,13 +11,13 @@ run configurations -> Arguments 탭 -> Program arguments MONDAY 입력
 ##OOP
 속성과 동작, 필드와 메서드
 
-집합관계(Aggregation) : 자동차 구성요소 - 엔진, 타이어, 핸들
+- 집합관계(Aggregation) : 자동차 구성요소 - 엔진, 타이어, 핸들
 1:N 관계 자동차1 N개의 객체 정보
 
-사용관계(Association) : 사람이라는 객체
+- 사용관계(Association) : 사람이라는 객체
 1:1 관계
 
-상속관계(Inheritance)
+- 상속관계(Inheritance)
 
 ## UML(unified Modeling Language)
 
@@ -50,11 +50,11 @@ employee <- Manager
 2. 생성자
 3. 메소드
 
-생성자의 역할은 인스턴스 변수 초기화, 객체를 생성될때 불려짐.
+- 생성자의 역할은 인스턴스 변수 초기화, 객체를 생성될때 불려짐.
 
-생성자 오버로딩 : 파라미터 아규먼트 갯수 다르게 받는것 
+- 생성자 오버로딩 : 파라미터 아규먼트 갯수 다르게 받는것 
 
-메서드 오버로딩 : 매개변수 타입 개수 순서가 다른것.
+- 메서드 오버로딩 : 매개변수 타입 개수 순서가 다른것.
 
 ------------------------------------------------------
 
@@ -68,43 +68,40 @@ employee <- Manager
 
 왜 static붙이고 안붙이나?
 
-card 종류별로 객체만들면 다름.
+카드를 만든다고 생각하자.
 
-suit: int
-width, height는 카드객체 생성될때 width, height 값이 같음.
-그러므로 굳이 Instance Variable로 갈 필요가 없다.
-굳이 힙영역에 각각 메모리 공간 만들어서 suit라는 방에 메모리 낭비할 필요없다.
+- card 종류별로 객체만들면 다름.
 
-suit: int
-static height: int
-static width: int
+- suit: int
+- width, height는 카드객체 생성될때 width, height 값이 같음.
+- 그러므로 굳이 Instance Variable로 갈 필요가 없다.
+- 굳이 힙영역에 각각 메모리 공간 만들어서 suit라는 방에 메모리 낭비할 필요없다.
+
+  - suit: int
+  - static height: int
+  - static width: int
 
 this
 static{ // stati initializer
+
 }
 
 ##싱글톤
 
-싱글톤 형태로 쓰는이유
-매번 메모리 힙에 객체가 썻다 지웠다 문제발생
-객체를 단 하나만 생성되게함.
-Eric Gamma - Design Pattern
-
-디자인패턴 - 구현하기전 클래스 설계할 때 개발자들에게 가이드를 줌.
-가이드라인 줄때 
+- 싱글톤 형태로 쓰는이유 : 매번 메모리 힙에 객체가 썻다 지웠다 문제발생
+- 객체를 단 하나만 생성되게함.
+- 디자인패턴 - 구현하기전 클래스 설계할 때 개발자들에게 가이드를 줌.
+- 패턴을 학습해야하는 단점이 있지만, 가이드라인을 주면 적용함
+- 객체를 생성후 계속 재사용하고 싶을때 싱글톤을 사용함.
 
 생성 패턴(creational pattern) 
 구조 패턴(structural pattern)
 행위 패턴(behavior pattern)
 
-패턴을 학습해야하는 단점이 있지만, 가이드라인을 주면 적용함
-
-객체를 생성후 계속 재사용하고 싶을때 싱글톤을 사용함.
-
 ## 단축키
 
-주석 ctrl+shift+/, ctrl+/
-주석 풀기 ctrl+shift+\
+- 주석 ctrl+shift+/, ctrl+/
+- 주석 풀기 ctrl+shift+\
 
 
 ## final 상수
@@ -119,30 +116,22 @@ Eric Gamma - Design Pattern
 
 import 디렉토리 별로 분류
 
-public > protected > default > private
- (+)	   (#)		(~)	(-)
+public(+) > protected(#)(Same package + Subclassing) > default(~)(Same package)> private(-)(Same Class)
+	   		
 
 +,#,~,- 기호이다.
 
-UML, Same package + Subclassing, Same package, Same Class
-
-
-my.parent
-
-employee
-
-my.child
-manager
-
 패키지가 달라도 상속관계이면 접근되는것이 protected
 
-public - class, constructor, method, field
+**각 접근제한자를 붙일수 있는것.**
 
-protected - field,method,constructor
+1. public - class, constructor, method, field
 
-default - class, field, method, constructor ex) class car
+2. protected - field,method,constructor
 
-private - field, method, constructor
+3. default - class, field, method, constructor ex) class car
+
+4. private - field, method, constructor
 
 ## 상속
 
