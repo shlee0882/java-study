@@ -130,15 +130,18 @@ UML, Same package + Subclassing, Same package, Same Class
 my.parent
 
 employee
-#name:string
-| my.child
+
+my.child
 manager
 
 패키지가 달라도 상속관계이면 접근되는것이 protected
 
 public - class, constructor, method, field
+
 protected - field,method,constructor
+
 default - class, field, method, constructor ex) class car
+
 private - field, method, constructor
 
 ## 상속
