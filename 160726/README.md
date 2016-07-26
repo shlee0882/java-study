@@ -135,10 +135,11 @@ public(+) > protected(#)(Same package + Subclassing) > default(~)(Same package)>
 
 ## 상속
 
+**상속을 쉽게 하는 방법**
 
-.java 파일 클릭후 -> refactor -> extract superclass -> superclass name -> add -> MereClerk - company
+.java 파일 클릭후 -> refactor -> extract superclass -> superclass name
 
--> name,salary,getname(),getsalary()
+-> add -> MereClerk - company -> name,salary,getname(),getsalary()
 
 employee 클래스의 부모는 object클래스다.
 super(); 오브젝트 생성자 콜하는 것.
@@ -156,6 +157,7 @@ super(); 오브젝트 생성자 콜하는 것.
 ## 오버라이드
 
 abstract 추상메서드 만드는 이유는 바디(블록) 없고 선언만 되어있는 메서드 
+
 추상메서드 만들면 추상클래스 선언해줘야함.
 
 다형성
