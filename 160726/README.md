@@ -11,6 +11,8 @@ run configurations -> Arguments 탭 -> Program arguments MONDAY 입력
 ##OOP
 속성과 동작, 필드와 메서드
 
+[!uml](../resources/uml.JPG)
+
 - 집합관계(Aggregation) : 자동차 구성요소 - 엔진, 타이어, 핸들
 1:N 관계 자동차1 N개의 객체 정보
 
@@ -102,7 +104,7 @@ static{ // stati initializer
 
 - 주석 ctrl+shift+/, ctrl+/
 - 주석 풀기 ctrl+shift+\
-
+- ctrl+shift+f
 
 ## final 상수
 
@@ -160,4 +162,95 @@ abstract 추상메서드 만드는 이유는 바디(블록) 없고 선언만 되
 
 추상메서드 만들면 추상클래스 선언해줘야함.
 
-다형성
+## 다형성
+
+![poly](../resources/polymor.JPG)
+polymorphism(다형성)
+-> poly(다양한) + morphism(변형, 변신)
+
+"one interface , multiple implementation"
+
+
+원 타입 = 구현은 다양하게
+Employee e1 = new Manager();
+Employee e2 = new Mereclerk();
+
+one interface , multiple implementation
+
+Employee
+
+6,7,8
+
+
+publication 만들고
+magazine 
+
+레퍼런스북
+super class를 company.publication 로 하고 construction from superclass 체크 들어간다.
+
+publication에 출판과 관련된 제목 페이지수 
+
+magazine월간지냐 주간지냐
+
+
+규약을 만들었음.
+
+ms-sql
+was 
+
+novel 저자 누구냐
+레퍼런스북은 어떤분야 레퍼런스북
+
+
+##인터페이스
+
+jdbc 인터페이스  오라클(db벤더 (객체)), mysql 가 
+
+개발코드 변경없이 실행환경 다르게 할수있다.
+개발자는 인터페이스만 보고 코딩함.
+
+Interface : 외부에 공개되는 모습(모양)
+인터페이스가 안좋아 -> 보여지는 모습
+: 규칙을 선언만하고 구현은 sub클래스에게 위임한다.
+: SingleInheritance의 단점을 보완
+
+![interface](../resources/interface.JPG)
+
+Animal
+eat()
+↑extends
+Bird
+eat() → implements <<interface>> flyable
+
+여러가지 기능을 계속 implements는 여러번 가능
+
+
+인터페이스에 있는 기능 쓰려면 반드시 오버라이딩 해야함
+
+public class birds extends Animal implements Flyable{
+ 
+}
+public interface flyable{
+ (public abstract)void takeoff();
+  		  void land();
+}
+
+Animal ani = new Bird(); (o)
+Flyable f = new Flyable(); (x) 추상보다 더 추상이므로 
+Flyable f = new Bird(); (o)
+
+실습 : new -> interface
+
+추상은 이탤릭체
+
+bird클래스 생성시 superclass chap08.animal, interface chap08.flyable 추가
+
+다른점
+추상클래스는 바디가 있는 메서드 콘크리트 추가로 추상메서드 가질수 있다.
+인터페이스는 추상메서드만 가질수 있다.
+
+공통점
+추상클래스와 인터페이스 공통점은 자기 자신이 스스로 객체 생성 불가
+반드시 하위클래스 통해서 객체 생성해야 한다.
+
+생성자를 상위클래스에서 추가해야함.
