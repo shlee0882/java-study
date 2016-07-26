@@ -177,31 +177,6 @@ Employee e2 = new Mereclerk();
 
 one interface , multiple implementation
 
-Employee
-
-6,7,8
-
-
-publication 만들고
-magazine 
-
-레퍼런스북
-super class를 company.publication 로 하고 construction from superclass 체크 들어간다.
-
-publication에 출판과 관련된 제목 페이지수 
-
-magazine월간지냐 주간지냐
-
-
-규약을 만들었음.
-
-ms-sql
-was 
-
-novel 저자 누구냐
-레퍼런스북은 어떤분야 레퍼런스북
-
-
 ##인터페이스
 
 jdbc 인터페이스  오라클(db벤더 (객체)), mysql 가 
