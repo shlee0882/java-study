@@ -63,13 +63,9 @@ DB는 예외처리 필수적으로 함.
 
 **다운로드 링크**
 
-1. [DB Express Edition 11g](https://drive.google.com/open?id=0B-z2J00dR5L7QTBySGJld05kUTA) 
+1. [DB Express Edition 11g](https://drive.google.com/open?id=0B-z2J00dR5L7QTBySGJld05kUTA) http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html
 
-http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html
-
-2. [JDBC Driver](https://drive.google.com/open?id=0B-z2J00dR5L7RGkwTWRxakFuTGs) 
-
-http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html
+2. [JDBC Driver](https://drive.google.com/open?id=0B-z2J00dR5L7RGkwTWRxakFuTGs) http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html
 
   - JDBC Driver는 .jar 형태 파일로 이클립스에서 추가가능하다.
 
