@@ -63,11 +63,11 @@ DB는 예외처리 필수적으로 함.
 
 **다운로드 링크**
 
-[DB Express Edition 11g](https://drive.google.com/open?id=0B-z2J00dR5L7QTBySGJld05kUTA) 
+1. **[DB Express Edition 11g]**(https://drive.google.com/open?id=0B-z2J00dR5L7QTBySGJld05kUTA) 
 
 공식: http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html
 
-[JDBC Driver](https://drive.google.com/open?id=0B-z2J00dR5L7RGkwTWRxakFuTGs) 
+2. [JDBC Driver](https://drive.google.com/open?id=0B-z2J00dR5L7RGkwTWRxakFuTGs) 
 
 공식: http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html
 
@@ -75,13 +75,13 @@ DB는 예외처리 필수적으로 함.
 
 - build path -> configure build path -> add external jars -> ojdbc6.jar 추가 
 
-[instant Client](https://drive.google.com/open?id=0B-z2J00dR5L7bUFRY1FQcWVYUEE)
+3. [instant Client](https://drive.google.com/open?id=0B-z2J00dR5L7bUFRY1FQcWVYUEE)
 
 공식: http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
 
-[Orange for Oracle](https://drive.google.com/open?id=0B-z2J00dR5L7Y1JZRWMtTThydDQ)
+4. [Orange for Oracle](https://drive.google.com/open?id=0B-z2J00dR5L7Y1JZRWMtTThydDQ)
 
-
+------------------------------------------------------------------------------------------------------
 
 1. DBMS 벤더별로 제공하는 Driver 클래스 등록해야함.
 
