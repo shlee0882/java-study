@@ -53,9 +53,9 @@ JDBC(Java DataBase Connectivity) : DB와 연동하는 Java어플리케이션 작
 
 - 오라클클라이언트 자동으로 깔리지 않음.
 
-1. Oracle11g XE(Express Edition)
-2. Orange4Oracle(SQL Editor)
-3. 오라클 클라이언트 설치
+  1. Oracle11g XE(Express Edition)
+  2. Orange4Oracle(SQL Editor)
+  3. 오라클 클라이언트 설치
 
 - jar를 클래스패스 설정하고 jdbc api 사용해서 java application 작성해보는것이 실습
 
@@ -72,3 +72,67 @@ DBMS와 연결해야하는데 Connection 이라는 객체 생성됨.
 statement 작성해서해야하고 전송 및 실행
 SQL 실행한 결과를 받아서 콘솔에 뿌려주거나 UI에 뿌려줌.
 closed를 통해 Connection Statement 객체들을 반납해줘야함
+
+커넥션 객체 생성 위해 드라이버 매니저 클래스에 getConnection 메서드 콜해야함.
+
+orange툴을 위한 작업
+
+C:\oraclexe\app\oracle\product\11.2.0\server\network\ADMIN tnsnames.ora 파일을 복사해서
+
+C:\java\instantclient-basic-nt-11.2.0.3.0\instantclient_11_2 에다 붙여넣음.
+
+orange options -> environment -> user Instant -> instant client path 
+
+
+- hr 계정 unlock
+
+alter user hr identified by hr account unlock; + ctrl enter
+
+
+employees -> view data
+
+not null 은 필수적으로 들어가야할 `컬럼이다.
+
+학번으로 개개인 구별
+
+사원정보 가지고있으면 사원번호 중복되면 안된다.
+varchar2는 가변길이, 문자열을 저장하는 데이터타입
+
+전체자리수는 8이고 소수점 2번째자리까지 허용
+
+
+![statement](../resources/statement.JPG)
+insert
+select - executeQuery()
+update - executeUpdate()
+delete - return 1 은 no count
+
+
+- executeQuery(), executeUpdate() 실행하니깐 ResultSetImpl 생성해주고 ...
+
+- 컬럼의 값을 받아오는것을 get...()
+
+정상: try -> finally
+오류: try -> catch -> finaaly
+
+정상이건 오류건 finally는 반드시 실행한다.
+
+##단축키
+
+- 소스블록 지정하고 alt 하고 방향키로 움직인다.
+
+departments 뿌리기
+
+
+create user scott identified by tiger default tablespace USERS temporary tablespace temp;
+
+유저 scott을 만드는데 비밀번호는 tiger이고 기본 테이블공간은 USERS이고 임시테이블공간은 temp로 만든다.
+
+grant connect, resource to scott;
+
+scott에게 자원과 커넥트를 준다.
+
+사용자에게 제약조건 pk
+
+jdbc 쓰는 이유는 어플리케이션 만들어서 db 붙여서 쓰는것.
+db 조작 조회하기 위해 sql 쓴다.
