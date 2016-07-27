@@ -57,7 +57,9 @@ JDBC(Java DataBase Connectivity) : DB와 연동하는 Java어플리케이션 작
 
 - DB는 예외처리 필수적으로 함.
 
-JDBC API - JDBC Driver(.jar) - Oracle(DB vendor) 설치순서
+---------------------------------------------------------------------------------------------------
+
+##JDBC API - JDBC Driver(.jar) - Oracle(DB vendor) 설치순서
 
 1. Oracle11g XE(Express Edition)
 
@@ -67,7 +69,9 @@ JDBC API - JDBC Driver(.jar) - Oracle(DB vendor) 설치순서
 
 4. 이클립스에 JDBC Driver(.jar)파일 추가하기
 
-**다운로드 링크**
+---------------------------------------------------------------------------------------------------
+
+##다운로드 링크
 
 1. [DB Express Edition 11g](https://drive.google.com/open?id=0B-z2J00dR5L7QTBySGJld05kUTA)
  - http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html
@@ -84,7 +88,14 @@ JDBC API - JDBC Driver(.jar) - Oracle(DB vendor) 설치순서
 
 4. [Orange for Oracle](https://drive.google.com/open?id=0B-z2J00dR5L7Y1JZRWMtTThydDQ)
 
+오라클
+오라클 클라이언트
+오렌지 포 오라클(에디터)
+JDBC Driver
+
 ------------------------------------------------------------------------------------------------------
+
+## orange for Oracle 에디터 사용해 DB작성 후 JDBC Driver를 이클립스에 추가하여 DB와 연동하기
 
 1. DBMS 벤더별로 제공하는 Driver 클래스 등록해야함.
 
@@ -98,16 +109,17 @@ JDBC API - JDBC Driver(.jar) - Oracle(DB vendor) 설치순서
 
 6. closed를 통해 Connection Statement 객체들을 반납해줘야함
 
+-----------------------------------------------------------------------------------------------------------
 
-커넥션 객체 생성 위해 드라이버 매니저 클래스에 getConnection 메서드 콜해야함.
-
-**orange for oracle 툴을 사용하기 위한 사전 작업**
+##orange for oracle 툴을 사용하기 위한 사전 작업
 
 1. C:\oraclexe\app\oracle\product\11.2.0\server\network\ADMIN tnsnames.ora 파일을 복사함. (오라클 설치 폴더 안에 파일있음.)
 
 2. C:\java\instantclient-basic-nt-11.2.0.3.0\instantclient_11_2 에 tnsnames.ora 파일 붙여넣기.
 
-**orange 초기작업**
+-----------------------------------------------------------------------------------------------------------
+
+##orange for oracle 초기작업
 
 orange options -> environment -> user Instant -> instant client path 
 
@@ -140,10 +152,12 @@ delete - return 1 은 no count
 
 - 컬럼의 값을 받아오는것을 get...()
 
-정상: try -> finally
-오류: try -> catch -> finaaly
+##try catch finally
 
-정상이건 오류건 finally는 반드시 실행한다.
+- 정상: try -> finally
+- 오류: try -> catch -> finaaly
+
+**정상이건 오류건 finally는 반드시 실행한다.**
 
 ##단축키
 
@@ -162,5 +176,7 @@ scott에게 자원과 커넥트를 준다.
 
 사용자에게 제약조건 pk
 
-jdbc 쓰는 이유는 어플리케이션 만들어서 db 붙여서 쓰는것.
-db 조작 조회하기 위해 sql 쓴다.
+##JDBC를 이클립스에서 쓰는 이유
+
+- jdbc 쓰는 이유는 어플리케이션 만들어서 db 붙여서 쓰는것.
+- db 조작 조회하기 위해 sql 쓴다.
