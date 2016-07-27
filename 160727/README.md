@@ -55,7 +55,7 @@ JDBC(Java DataBase Connectivity) : DB와 연동하는 Java어플리케이션 작
 
   1. Oracle11g XE(Express Edition)
   2. Orange4Oracle(SQL Editor)
-  3. 오라클 클라이언트 설치
+  3. 오라클 클라이언트(instant Client) 설치
 
 - jar를 클래스패스 설정하고 jdbc api 사용해서 java application 작성해보는것이 실습
 
@@ -63,11 +63,25 @@ DB는 예외처리 필수적으로 함.
 
 **다운로드 링크**
 
-[DB Express Edition 11g](http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html)
+[DB Express Edition 11g](https://drive.google.com/open?id=0B-z2J00dR5L7QTBySGJld05kUTA) 
 
-[JDBC Driver](http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html)
+공식: http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html
 
-build path -> configure build path -> add external jars -> ojdbc6.jar 추가 
+[JDBC Driver](https://drive.google.com/open?id=0B-z2J00dR5L7RGkwTWRxakFuTGs) 
+
+공식: http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html
+
+- JDBC Driver는 .jar 형태 파일로 이클립스에서 추가가능하다.
+
+- build path -> configure build path -> add external jars -> ojdbc6.jar 추가 
+
+[instant Client](https://drive.google.com/open?id=0B-z2J00dR5L7bUFRY1FQcWVYUEE)
+
+공식: http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
+
+[Orange for Oracle](https://drive.google.com/open?id=0B-z2J00dR5L7Y1JZRWMtTThydDQ)
+
+
 
 1. DBMS 벤더별로 제공하는 Driver 클래스 등록해야함.
 
