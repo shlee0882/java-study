@@ -53,13 +53,19 @@ JDBC(Java DataBase Connectivity) : DB와 연동하는 Java어플리케이션 작
 
 - 오라클클라이언트 자동으로 깔리지 않음.
 
-  1. Oracle11g XE(Express Edition)
-  2. Orange4Oracle(SQL Editor)
-  3. 오라클 클라이언트(instant Client) 설치
-
 - jar를 클래스패스 설정하고 jdbc api 사용해서 java application 작성해보는것이 실습
 
-DB는 예외처리 필수적으로 함.
+- DB는 예외처리 필수적으로 함.
+
+JDBC API - JDBC Driver(.jar) - Oracle(DB vendor) 설치순서
+
+1. Oracle11g XE(Express Edition)
+
+2. Orange4Oracle(SQL Editor)
+
+3. 오라클 클라이언트(instant Client) 설치
+
+4. 이클립스에 JDBC Driver(.jar)파일 추가하기
 
 **다운로드 링크**
 
