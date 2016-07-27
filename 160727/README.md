@@ -63,23 +63,23 @@ DB는 예외처리 필수적으로 함.
 
 **다운로드 링크**
 
-1. [DB Express Edition 11g](https://drive.google.com/open?id=0B-z2J00dR5L7QTBySGJld05kUTA) 
+- [DB Express Edition 11g](https://drive.google.com/open?id=0B-z2J00dR5L7QTBySGJld05kUTA) 
 
 공식: http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html
 
-2. [JDBC Driver](https://drive.google.com/open?id=0B-z2J00dR5L7RGkwTWRxakFuTGs) 
+- [JDBC Driver](https://drive.google.com/open?id=0B-z2J00dR5L7RGkwTWRxakFuTGs) 
 
 공식: http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html
 
-- JDBC Driver는 .jar 형태 파일로 이클립스에서 추가가능하다.
+  - JDBC Driver는 .jar 형태 파일로 이클립스에서 추가가능하다.
 
-- build path -> configure build path -> add external jars -> ojdbc6.jar 추가 
+  - build path -> configure build path -> add external jars -> ojdbc6.jar 추가 
 
-3. [instant Client](https://drive.google.com/open?id=0B-z2J00dR5L7bUFRY1FQcWVYUEE)
+- [instant Client](https://drive.google.com/open?id=0B-z2J00dR5L7bUFRY1FQcWVYUEE)
 
 공식: http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
 
-4. [Orange for Oracle](https://drive.google.com/open?id=0B-z2J00dR5L7Y1JZRWMtTThydDQ)
+- [Orange for Oracle](https://drive.google.com/open?id=0B-z2J00dR5L7Y1JZRWMtTThydDQ)
 
 ------------------------------------------------------------------------------------------------------
 
