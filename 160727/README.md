@@ -73,11 +73,10 @@ DB는 예외처리 필수적으로 함.
 
   - build path -> configure build path -> add external jars -> ojdbc6.jar 추가 
 
-- [instant Client](https://drive.google.com/open?id=0B-z2J00dR5L7bUFRY1FQcWVYUEE)
+3. [instant Client](https://drive.google.com/open?id=0B-z2J00dR5L7bUFRY1FQcWVYUEE)
+ - http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
 
-http://www.oracle.com/technetwork/database/features/instant-client/index-097480.html
-
-- [Orange for Oracle](https://drive.google.com/open?id=0B-z2J00dR5L7Y1JZRWMtTThydDQ)
+4. [Orange for Oracle](https://drive.google.com/open?id=0B-z2J00dR5L7Y1JZRWMtTThydDQ)
 
 ------------------------------------------------------------------------------------------------------
 
