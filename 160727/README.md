@@ -61,25 +61,36 @@ JDBC(Java DataBase Connectivity) : DB와 연동하는 Java어플리케이션 작
 
 DB는 예외처리 필수적으로 함.
 
+**다운로드 링크**
+
 [DB Express Edition 11g](http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html)
+
 [JDBC Driver](http://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html)
 
 build path -> configure build path -> add external jars -> ojdbc6.jar 추가 
 
-DBMS 벤더별로 제공하는 Driver 클래스 등록해야함.
-DBMS와 연결해야하는데 Connection 이라는 객체 생성됨.
-연결했으면 SQL문을 작성해서 DBMS한테 전달해야함.
-statement 작성해서해야하고 전송 및 실행
-SQL 실행한 결과를 받아서 콘솔에 뿌려주거나 UI에 뿌려줌.
-closed를 통해 Connection Statement 객체들을 반납해줘야함
+1. DBMS 벤더별로 제공하는 Driver 클래스 등록해야함.
+
+2. DBMS와 연결해야하는데 Connection 이라는 객체 생성됨.
+
+3. 연결했으면 SQL문을 작성해서 DBMS한테 전달해야함.
+
+4. statement 작성해서해야하고 전송 및 실행
+
+5. SQL 실행한 결과를 받아서 콘솔에 뿌려주거나 UI에 뿌려줌.
+
+6. closed를 통해 Connection Statement 객체들을 반납해줘야함
+
 
 커넥션 객체 생성 위해 드라이버 매니저 클래스에 getConnection 메서드 콜해야함.
 
-orange툴을 위한 작업
+**orange for oracle 툴을 사용하기 위한 사전 작업**
 
-C:\oraclexe\app\oracle\product\11.2.0\server\network\ADMIN tnsnames.ora 파일을 복사해서
+1. C:\oraclexe\app\oracle\product\11.2.0\server\network\ADMIN tnsnames.ora 파일을 복사함. (오라클 설치 폴더 안에 파일있음.)
 
-C:\java\instantclient-basic-nt-11.2.0.3.0\instantclient_11_2 에다 붙여넣음.
+2. C:\java\instantclient-basic-nt-11.2.0.3.0\instantclient_11_2 에 tnsnames.ora 파일 붙여넣기.
+
+**orange 초기작업**
 
 orange options -> environment -> user Instant -> instant client path 
 
