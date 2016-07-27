@@ -63,7 +63,7 @@ DB는 예외처리 필수적으로 함.
 
 **다운로드 링크**
 
-1. **[DB Express Edition 11g]**(https://drive.google.com/open?id=0B-z2J00dR5L7QTBySGJld05kUTA) 
+1. [DB Express Edition 11g](https://drive.google.com/open?id=0B-z2J00dR5L7QTBySGJld05kUTA) 
 
 공식: http://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html
 
