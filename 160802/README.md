@@ -152,11 +152,11 @@ set을 가져야함.
 
 ##Set
 
-[!set](../resources/HashSet.png)
+![set](../resources/HashSet.png)
 
 ##Map
 
-[!map](../resources/HashMap.png)
+![map](../resources/HashMap.png)
 
 ## generic
 
