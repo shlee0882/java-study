@@ -97,14 +97,16 @@ VO(value object) or DTO(Data Transfer object)
 
 Mybatis, Hibernate, JPA(Java Persistence API)를 ORM(Object Relational Mapping) Framework라 한다.
 
+
+
+##UserVO
+
 - Users Table
 
 userid|name|age|birth
 ------|----|----|---------
 dooly | 둘리 | 20 | 2000-01-01
 
-UserVO
--------
 userid 일일히 맵핑작업 멤버변수에 저장함.
 name
 age
