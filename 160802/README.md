@@ -75,18 +75,18 @@ values(0,0,0,0,0)
 
 "'"+SSN+"'" 
 
-intsert into customer만 같고 밸류값만 다르다.
-이런 공통적인 SQL문은 미리 준비하고 미리 precomplie하라고함.
+- intsert into customer만 같고 밸류값만 다르다.
+- 이런 공통적인 SQL문은 미리 준비하고 미리 precomplie하라고함.
 
-가변적으로 인서트구문 만번 돌릴때 밸류만 보내줄게
-values(?,?,?,?,?) 물음표를 써줌.
-물음표에 들어갈 값만 밑에서 set해주는것이다.
-동적으로 들어갈 값 ?(물음표)로 처리
+- 가변적으로 인서트구문 만번 돌릴때 밸류만 보내줄게
+- values(?,?,?,?,?) 물음표를 써줌.
+- 물음표에 들어갈 값만 밑에서 set해주는것이다.
+- 동적으로 들어갈 값 ?(물음표)로 처리
 
-preparedstatement는 일반 statement보다 속도가 빠르다.
+- preparedstatement는 일반 statement보다 속도가 빠르다.
 
-statement.setString(1,0)
-statement.setString(2,0)
+- statement.setString(1,0)
+- statement.setString(2,0)
 
 
 VO(value object) or DTO(Data Transfer object)
@@ -150,17 +150,13 @@ set을 가져야함.
 
 \<\<interface\>\>
 
-Collection
-
-↑
-
-\<\<interface\>\>
-
-List
-
-↑
-
-arrayList
+Collection|
+----------|
+↑|
+\<\<interface\>\>|
+List|
+↑|
+arrayList|
 
 ArrayList 객체 생성
 
