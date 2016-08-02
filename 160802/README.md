@@ -59,6 +59,7 @@ getMessage
 ## PreparedStatement
 
 \<\<interface\>\>
+
 Statement
 
 ↑
@@ -152,11 +153,17 @@ set을 가져야함.
 제너릭이 나온 배경을 설명해보면
 
 \<\<interface\>\>
+
 Collection
+
 ↑
+
 \<\<interface\>\>
+
 List
+
 ↑
+
 arrayList
 
 ArrayList 객체 생성
