@@ -148,7 +148,7 @@ set을 가져야함.
 
 ##List
 
-[!arraylist](../resources/ArrayList.png)
+![arraylist](../resources/ArrayList.png)
 
 ##Set
 
