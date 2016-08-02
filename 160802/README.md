@@ -146,6 +146,18 @@ hotel <---1--:---N--> room
 
 set을 가져야함.
 
+##List
+
+[!arraylist](../resources/ArrayList.png)
+
+##Set
+
+[!set](../resources/HashSet.png)
+
+##Map
+
+[!map](../resources/HashMap.png)
+
 ## generic
 
 제너릭이 나온 배경을 설명해보면
