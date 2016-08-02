@@ -129,7 +129,9 @@ string은 레퍼런스 타입이어 힙 안에 객체가 2개가 생성
 프로젝트 선택후 build path -> configure build path -> library -> add library -> jUnit
 
 [junit4 api doc](http://junit.sourceforge.net/javadoc/)
-[junit](../resources/JUnit.pdf)
+
+[junit 문서 보기](../resources/JUnit.pdf)
+
 static import 라는게 있다.
 
 'Assert'.asserEqual(), 'Assert'.assertSame()
