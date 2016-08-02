@@ -94,8 +94,14 @@ VO(value object) or DTO(Data Transfer object)
 Mybatis, Hibernate, JPA(Java Persistence API)를 ORM(Object Relational Mapping) Framework라 한다.
 
 - Users Table
+<<<<<<< HEAD
 userid | name | age | birth
 ----------------------------
+=======
+
+userid|name|age|birth
+------|----|----|---------
+>>>>>>> origin/master
 dooly | 둘리 | 20 | 2000-01-01
 
 UserVO
@@ -107,8 +113,8 @@ birth
 
 Mybatis는 개발자가 UserVO 객체만 만들고 UserVO가 자동맵핑해준다.
 
-1 ROW UserVO
-2 ROW UserVO
+1. ROW UserVO
+2. ROW UserVO
 
 UserVO객체가 여러건 생성
 한 건이 UserVO객체에 저장된다.
@@ -119,7 +125,7 @@ generate toString
 
 ## X-internet 
 
-화면 UI를 쉽게 만들수 있는 프레임워크 ex) 마이플랫폼, 가우스, 트러스트폼
+- 화면 UI를 쉽게 만들수 있는 프레임워크 ex) 마이플랫폼, 가우스, 트러스트폼
 
 
 예외처리(10장, 11장, 15장)
@@ -168,9 +174,9 @@ JDK 1.4이하
 
 ex)
 
-List list = new ArrayList();
-list.add(new String("hello"));
-list.add(new Integer(10));
+- List list = new ArrayList();
+- list.add(new String("hello"));
+- list.add(new Integer(10));
 
 for(int i = 0; i<=list.size(); i++){ list.get(i); }
 
