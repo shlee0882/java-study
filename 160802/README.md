@@ -147,10 +147,10 @@ set을 가져야함.
 
 제너릭이 나온 배경을 설명해보면
 
-<<interface>>
+\<\<interface\>\>
 Collection
 ↑
-<<interface>>
+\<\<interface\>\>
 List
 ↑
 arrayList
