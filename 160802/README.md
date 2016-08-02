@@ -58,11 +58,9 @@ getMessage
 
 ## PreparedStatement
 
-<<interface>>
+\<<interface>>\
 Statement  SQL 전송해주고 실행해주는 역할이 statement
-
 ↑
-
 Preparedstatement
 
 ex)
@@ -96,14 +94,9 @@ VO(value object) or DTO(Data Transfer object)
 Mybatis, Hibernate, JPA(Java Persistence API)를 ORM(Object Relational Mapping) Framework라 한다.
 
 - Users Table
-<<<<<<< HEAD
-userid | name | age | birth
-----------------------------
-=======
 
 userid|name|age|birth
 ------|----|----|---------
->>>>>>> origin/master
 dooly | 둘리 | 20 | 2000-01-01
 
 UserVO
@@ -180,7 +173,7 @@ ex)
 - list.add(new String("hello"));
 - list.add(new Integer(10));
 
-for(int i = 0; i<=list.size(); i++){ list.get(i); }
+for(int i = 0; i<=list.size(); i++){ list.geti); }
 
 string value = (string)list.get(i);
 object타입이니 string으로 형변환해줘야함. 하지만 integer는 string으로 형변환 안되서 오류발생하고 알아내지 못함.
@@ -199,36 +192,3 @@ for(i=0;i<=list.size;i++){ string value = list.get(i);}
 
 
 클래스 f3
-
-스레드 safe하게 만들고 싶으면 arraylist 작성할때 이렇게 작성해라.
-
-List list = Collections.synchronizedList(new ArrayList(...));
-
-
-## HashSet
-
-동일 객체 및 동등 객체는 중복 저장하지 않음.
-
-## Map
-
-키, 값으로 구성된 Map.Entry 객체를 저장하는 구조
-키는 중복 X, 값은 중복 저장가능
-
-해시맵 써본다.
-
-hashmap은 hashtable보다 가볍다
-
-레코드 다 읽어오
-
-forign key는 primary key를 참조한다.
-stock table에 symbol이 있고 price가 있다.
-symbol은 pk이고 shares의 symbol은 fk이다.
-
-##앞으로 배울 진도
-1. JavaSE(JDBC 포함)
-2. Servlet / JSP
- 2-1 HTML
- 2-2 Javascript
- 2-3 jQuery
-3. SQL
-4. Spring / MyBatis
