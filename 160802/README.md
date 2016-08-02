@@ -58,7 +58,7 @@ getMessage
 
 ## PreparedStatement
 
-\<\<\interface\>\>\
+\<\<interface\>\>
 Statement  SQL 전송해주고 실행해주는 역할이 statement
 ↑
 Preparedstatement
