@@ -138,9 +138,9 @@ generate toString
 
 - count*
 
-- list 계열은 순서를 유지하고 저장, 중복저장가능
-- set 계열은 순서 유지않고 저장, 중복저장 안됨 HashSet, TreeSet
-- map 계열은 키와 값의 쌍으로 저장, 키는 중복 저장 안됨
+1. **list** 계열은 순서를 유지하고 저장, 중복저장가능
+2. **set** 계열은 순서 유지않고 저장, 중복저장 안됨 HashSet, TreeSet
+3. **map** 계열은 키와 값의 쌍으로 저장, 키는 중복 저장 안됨
 
 hotel <---1--:---N--> room 
 
