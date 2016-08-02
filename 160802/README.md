@@ -95,7 +95,7 @@ Mybatis, Hibernate, JPA(Java Persistence API)를 ORM(Object Relational Mapping) 
 
 - Users Table
 userid | name | age | birth
------------------------------
+----------------------------
 dooly | 둘리 | 20 | 2000-01-01
 
 UserVO
@@ -172,7 +172,7 @@ List list = new ArrayList();
 list.add(new String("hello"));
 list.add(new Integer(10));
 
-for(int i = 0; i<=list.size(); i++){ list.geti); }
+for(int i = 0; i<=list.size(); i++){ list.get(i); }
 
 string value = (string)list.get(i);
 object타입이니 string으로 형변환해줘야함. 하지만 integer는 string으로 형변환 안되서 오류발생하고 알아내지 못함.
