@@ -12,6 +12,7 @@ static final
 
 ## JDBC
 
+[JDBC 문서보기](../resources/JDBC.pdf)
 
 - DB에 종속적으로 코딩하면 안됨.
 
