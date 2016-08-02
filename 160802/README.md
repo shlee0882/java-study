@@ -127,9 +127,6 @@ generate toString
 
 - 화면 UI를 쉽게 만들수 있는 프레임워크 ex) 마이플랫폼, 가우스, 트러스트폼
 
-
-예외처리(10장, 11장, 15장)
-
 ## 컬렉션 프레임워크
 
 - 같은 타입 여러개 저장하는것이 배열
@@ -169,7 +166,9 @@ arrayList
 ArrayList 객체 생성
 
 Collection list1 = new ArrayList();
+
 List list2 = new ArrayList();
+
 ArrayList list3 = new ArrayList();
 
 ## object였다가 E(element)가 나온이유가 뭘까?
