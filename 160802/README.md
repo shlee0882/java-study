@@ -169,30 +169,28 @@ ArrayList list3 = new ArrayList();
 
 <E> generic
 
-JDK 1.4이하
-
 ex)
 
-- List list = new ArrayList();
-- list.add(new String("hello"));
-- list.add(new Integer(10));
+JDK 1.4이하의 경우
 
-for(int i = 0; i<=list.size(); i++){ list.geti); }
+List list = new ArrayList();
+list.add(new String("hello"));
+list.add(new Integer(10));
+
+for(int i = 0; i<=list.size(); i++){ list.get(i); }
 
 string value = (string)list.get(i);
+
 object타입이니 string으로 형변환해줘야함. 하지만 integer는 string으로 형변환 안되서 오류발생하고 알아내지 못함.
 
+최상위 클래스인 object 클래스로부터 그전엔 모두 받았지만 어떤 데이터와 데이터타입이 들어올지 모르고 오류가 발생시 개발자가 오류를 해결하기 힘들어짐 -> \<E\> 엘리먼트 타입을 주어 해당 타입에 데이터만 받자고 바뀜.
 
-## Element 타입 지정하고 간다.
+- JDK5.0이상 부터는 List<String> list = new ArrayList<String>(); 썻다.
 
-JDK5.0이상 부터는 List<String> list = new ArrayList<String>(); 썻다.
-
-1.7이상부터 List<String> list = new ArrayList<>(); 썻다.
+- 1.7이상부터 List<String> list = new ArrayList<>(); 썻다.
 
 list.add(new string("hello");
 list.add(new Integer(10)); x 컴파일 오류
 
 for(i=0;i<=list.size;i++){ string value = list.get(i);}
 
-
-클래스 f3
