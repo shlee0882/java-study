@@ -197,3 +197,36 @@ for(i=0;i<=list.size;i++){ string value = list.get(i);}
 
 
 클래스 f3
+
+스레드 safe하게 만들고 싶으면 arraylist 작성할때 이렇게 작성해라.
+
+List list = Collections.synchronizedList(new ArrayList(...));
+
+
+## HashSet
+
+동일 객체 및 동등 객체는 중복 저장하지 않음.
+
+## Map
+
+키, 값으로 구성된 Map.Entry 객체를 저장하는 구조
+키는 중복 X, 값은 중복 저장가능
+
+해시맵 써본다.
+
+hashmap은 hashtable보다 가볍다
+
+레코드 다 읽어오
+
+forign key는 primary key를 참조한다.
+stock table에 symbol이 있고 price가 있다.
+symbol은 pk이고 shares의 symbol은 fk이다.
+
+##앞으로 배울 진도
+1. JavaSE(JDBC 포함)
+2. Servlet / JSP
+ 2-1 HTML
+ 2-2 Javascript
+ 2-3 jQuery
+3. SQL
+4. Spring / MyBatis
