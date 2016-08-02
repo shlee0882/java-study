@@ -95,7 +95,7 @@ Mybatis, Hibernate, JPA(Java Persistence API)를 ORM(Object Relational Mapping) 
 
 - Users Table
 userid | name | age | birth
------------------------------
+-------|------|-----|--------
 dooly | 둘리 | 20 | 2000-01-01
 
 UserVO
