@@ -58,11 +58,12 @@ getMessage
 
 ## PreparedStatement
 
-\<\<interface\>\>
 
-Statement
+\<\<interface\>\>|
+------------------|
+Statement|
 
-↑
+↑|
 
 Preparedstatement
 
