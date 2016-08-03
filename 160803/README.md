@@ -37,6 +37,7 @@ ssn name address
 
 ##SQL
 
+![emp](../resources/emp.JPG)
 employees 테이블의 employeed_id는 pk(primary key)
 department_id는 foreign key 참조(reference)
 
