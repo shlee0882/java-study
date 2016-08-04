@@ -88,9 +88,9 @@ merge into dooly d
 
   - sorting하고 나서 5건 가져온다.
 
-from 절에 subquery가 오는것을 인라인뷰라 한다.
+  - from 절에 subquery가 오는것을 인라인뷰라 한다. select from select ...
 
-- select * from (select * from employees order by salary desc) where rownum <= 5;
+- select * **from** (select * from employees order by salary desc) where rownum <= 5;
 
 ## IN, ANY
 
