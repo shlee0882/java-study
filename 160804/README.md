@@ -93,15 +93,15 @@ select * from (select * from employees order by salary desc) where rownum <= 5;
 
 ## IN, ANY
 
-select EMPLOYEE_ID, SALARY from EMPLOYEES where SALARY IN(2000,3000,4000) order by EMPLOYEE_ID;
+- select EMPLOYEE_ID, SALARY from EMPLOYEES where SALARY IN(2000,3000,4000) order by EMPLOYEE_ID;
 
-select EMPLOYEE_ID, SALARY from EMPLOYEES where SALARY = any(2000,3000,4000) order by EMPLOYEE_ID;
+- select EMPLOYEE_ID, SALARY from EMPLOYEES where SALARY = any(2000,3000,4000) order by EMPLOYEE_ID;
 
 ## NOT IN, <>ALL
 
-select EMPLOYEE_ID, SALARY from EMPLOYEES where SALARY NOT IN(2000,3000,4000) order by EMPLOYEE_ID;
+- select EMPLOYEE_ID, SALARY from EMPLOYEES where SALARY NOT IN(2000,3000,4000) order by EMPLOYEE_ID;
 
-select EMPLOYEE_ID, SALARY from EMPLOYEES where SALARY <> all (2000,3000,4000) order by EMPLOYEE_ID;
+- select EMPLOYEE_ID, SALARY from EMPLOYEES where SALARY <> all (2000,3000,4000) order by EMPLOYEE_ID;
 
 
 ##INNER JOIN(동등 조인(내부조인,inner join)
