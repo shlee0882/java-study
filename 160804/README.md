@@ -69,7 +69,7 @@ insert into dooly(EMPLOYEE_ID) select EMPLOYEE_ID from EMPLOYEES where JOB_ID = 
 
 commit;
 
-![merge](../resources/merge.PNG)
+![merge](../resources/merge.png)
 
 ## 인라인뷰
 
