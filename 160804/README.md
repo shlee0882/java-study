@@ -31,31 +31,24 @@ SELECT a.employee_id, a.emp_name, a.department_id,
 
 ##시노님(synonym)
 
+![synonym](../resources/synonym.png)
+
 시노님은 동의어라는 뜻이다.
 
 public,private 부여가능.
 
-SELECT * FROM SCOTT.DEPT;
+각 계정에서 테이블보려면 권한필요
+권한부여할수 있다.
 
 
-grant create synonym to scott;
-
-create or replace synonym emp2 for emp;
-
-SELECT * FROM EMP2;
-
-SELECT * FROM SCOTT.EMP2;
-
-GRANT SELECT ON EMP2 TO HR;
 
 PUBLIC SYNONYM
 
 ##시퀀스(sequence)
 
-create sequence -> empno_seq 생성
+- create sequence -> empno_seq 생성
 
-insert into emp values(empno_seq.nextval,'홍길동','clerk',7782,sysdate,3000,null,10);
-commit;
+- insert into emp values(empno_seq.nextval,'홍길동','clerk',7782,sysdate,3000,null,10);
 
 ##머지(merge)
 
