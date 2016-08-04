@@ -67,8 +67,6 @@ commit;
 
   -  insert into dooly(EMPLOYEE_ID) select EMPLOYEE_ID from EMPLOYEES where JOB_ID = 'SA_REP' and MANAGER_ID = 146;
 
-commit;
-
 ![merge](../resources/merge.png)
 
 ## 인라인뷰
