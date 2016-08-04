@@ -59,26 +59,17 @@ commit;
 
 ##머지(merge)
 
+- 머지는 언제 쓸까? merge는 한꺼번에 처리해야할 상황이다 하면 쓰면됨.
+- 아래는 insert into 값 select 값으로 insert와 select를 둘다 처리해야할때 사용
+- 6개 겹침 매칭되면 update, 아니면 insert
+
 create table dooly(EMPLOYEE_ID number, bonus_amt number default 0);
 
 insert into dooly(EMPLOYEE_ID) select EMPLOYEE_ID from EMPLOYEES where JOB_ID = 'SA_REP' and MANAGER_ID = 146;
 
 commit;
 
-select * from DOOLY;
-
---merge 한꺼번에 처리해야할 상황이다 하면 쓰면됨.
--- 6개 겹침 
--- 매칭되면 update, 아니면 insert
-
-merge into dooly d 
-      using(select EMPLOYEE_ID, SALARY,JOB_ID from EMPLOYEES ) e
-      on (d.employee_id = e.employee_id)
-    when matched then
-      update set d.bonus_amt = d.bonus_amt + e.salary * 0.01
-    when not matched then
-      insert (d.employee_id, d.bonus_amt) values(e.employee_id, e.salary * 0.001) where e.job_id = 'SA_REP';
-
+![merge](../resources/merge.PNG)
 
 ## 인라인뷰
 
