@@ -89,6 +89,9 @@ PUBLIC SYNONYM
 
 ##INNER JOIN(동등 조인(내부조인,inner join)
 
+![innerjoin](../resources/innerjoin.png)
 
  
 ##외부조인(outer join)
+
+![outer](../resources/outer.png)
