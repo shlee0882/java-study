@@ -63,9 +63,9 @@ commit;
 - 아래는 insert into 값 select 값으로 insert와 select를 둘다 처리해야할때 사용
 - 6개 겹침 매칭되면 update, 아니면 insert
 
-create table dooly(EMPLOYEE_ID number, bonus_amt number default 0);
+  - create table dooly(EMPLOYEE_ID number, bonus_amt number default 0);
 
-insert into dooly(EMPLOYEE_ID) select EMPLOYEE_ID from EMPLOYEES where JOB_ID = 'SA_REP' and MANAGER_ID = 146;
+  -  insert into dooly(EMPLOYEE_ID) select EMPLOYEE_ID from EMPLOYEES where JOB_ID = 'SA_REP' and MANAGER_ID = 146;
 
 commit;
 
