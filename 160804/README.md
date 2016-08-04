@@ -98,3 +98,57 @@ select EMPLOYEE_ID, SALARY from EMPLOYEES where SALARY = any(2000,3000,4000) ord
 
 select EMPLOYEE_ID, SALARY from EMPLOYEES where SALARY NOT IN(2000,3000,4000) order by EMPLOYEE_ID;
 select EMPLOYEE_ID, SALARY from EMPLOYEES where SALARY <> all (2000,3000,4000) order by EMPLOYEE_ID;
+
+
+##INNER JOIN(동등 조인(내부조인,inner join)
+
+SELECT a.employee_id,
+       a.FIRST_NAME,
+       a.department_id,
+       b.department_name,
+       a.JOB_ID,
+       j.JOB_TITLE,
+       l.CITY
+       
+  FROM employees a,
+       departments b, -- 107*27 = 2889  cartesian product 다 가져옴, 똑같은것만 가져와야한다.
+       jobs j,
+       LOCATIONS l
+       
+ WHERE a.department_id = b.department_id
+   and a.JOB_ID = j.JOB_ID
+   and b.LOCATION_ID = l.LOCATION_ID;
+   
+   select * from EMPLOYEES;
+   select * from DEPARTMENTS;
+   
+   select * from JOBS;
+  -- 사장은 번호가 없어서 못가져옴.
+select count(*)
+  from employees;
+ 
+select count(*)
+  from DEPARTMENTS;
+ 
+##외부조인(outer join)
+
+SELECT a.employee_id,
+       a.FIRST_NAME,
+       a.department_id,
+       b.department_name,
+       a.job_id,
+       j.JOB_TITLE,
+       l.CITY
+  FROM employees a,
+       departments b,
+       jobs j,
+       LOCATIONS l
+ WHERE a.department_id = b.department_id(+)
+   and a.JOB_ID = j.JOB_ID
+   and b.LOCATION_ID = l.LOCATION_ID(+);
+   
+ select count(*)
+  from employees;
+ 
+select count(*)
+  from DEPARTMENTS;
