@@ -85,7 +85,9 @@ merge into dooly d
 - select * from EMPLOYEES where rownum <= 5 order by SALARY desc;
 
 자르고 소팅함 -> 소팅하고 잘라야함.
+
 sorting하고 나서 5건 가져온다.
+
 from 절에 subquery가 오는것을 인라인뷰라 한다.
 
 - select * from (select * from employees order by salary desc) where rownum <= 5;
