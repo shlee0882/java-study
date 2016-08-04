@@ -83,10 +83,12 @@ merge into dooly d
 ## 인라인뷰
 
 select * from EMPLOYEES where rownum <= 5 order by SALARY desc;
+
 -- 자르고 소팅함 -> 소팅하고 잘라야함.
 
 -- sorting하고 나서 5건 가져온다.
 -- from 절에 subquery가 오는것을 인라인뷰라 한다.
+
 select * from (select * from employees order by salary desc) where rownum <= 5;
 
 ## IN, ANY
@@ -102,53 +104,6 @@ select EMPLOYEE_ID, SALARY from EMPLOYEES where SALARY <> all (2000,3000,4000) o
 
 ##INNER JOIN(동등 조인(내부조인,inner join)
 
-SELECT a.employee_id,
-       a.FIRST_NAME,
-       a.department_id,
-       b.department_name,
-       a.JOB_ID,
-       j.JOB_TITLE,
-       l.CITY
-       
-  FROM employees a,
-       departments b, -- 107*27 = 2889  cartesian product 다 가져옴, 똑같은것만 가져와야한다.
-       jobs j,
-       LOCATIONS l
-       
- WHERE a.department_id = b.department_id
-   and a.JOB_ID = j.JOB_ID
-   and b.LOCATION_ID = l.LOCATION_ID;
-   
-   select * from EMPLOYEES;
-   select * from DEPARTMENTS;
-   
-   select * from JOBS;
-  -- 사장은 번호가 없어서 못가져옴.
-select count(*)
-  from employees;
- 
-select count(*)
-  from DEPARTMENTS;
+
  
 ##외부조인(outer join)
-
-SELECT a.employee_id,
-       a.FIRST_NAME,
-       a.department_id,
-       b.department_name,
-       a.job_id,
-       j.JOB_TITLE,
-       l.CITY
-  FROM employees a,
-       departments b,
-       jobs j,
-       LOCATIONS l
- WHERE a.department_id = b.department_id(+)
-   and a.JOB_ID = j.JOB_ID
-   and b.LOCATION_ID = l.LOCATION_ID(+);
-   
- select count(*)
-  from employees;
- 
-select count(*)
-  from DEPARTMENTS;
