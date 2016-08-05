@@ -11,9 +11,13 @@ employees 테이블과 job_history 테이블을 outer join 사용함.
 SubQuery(부분쿼리)
 
 1. 메인쿼리와의 연관성 여부
+
   a. 연관성 없는 서브쿼리(Noncorrelated subquery)
+  
     A. 단일 ROW, 단일 칼럼을 반환하는 서브쿼리
+    
     B. 다중 ROW, 단일 칼럼을 반환하는 서브쿼리
+    
     C. 다중 컬럼을 반환하는 서브쿼리
 
     메인쿼리와 서브쿼리가 각자 개별적으로 실행 가능.
