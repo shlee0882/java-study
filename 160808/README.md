@@ -155,9 +155,17 @@ FileOutPutStream은 파일을 출력하는게 주기능이므로 꼭 써야하�
 노트스트림 횟수 제한있다.
 노드스트림의 경우 한번만 쓸수 있지만. 프로세스스트림의 경우 자신이 원하는만큼 보조적인 기능이 여러개 있으므로 사용가능하다.
 
-FileOutputStream fo = new FileOutputStream("my.mp3"); -> NodeStream
-BufferdOutputStream bo = new BufferdOutputStream(fo); -> Processing Stream
-OutputStream osw = new OutputStreamWriter(bo); -> Proccessing Stream
+FileOutputStream fo = new FileOutputStream("my.mp3");
+
+-> NodeStream
+
+BufferdOutputStream bo = new BufferdOutputStream(fo);
+
+-> Processing Stream
+
+OutputStream osw = new OutputStreamWriter(bo); 
+
+-> Proccessing Stream
 
 그러면 스트림의 종류 구분은 어떻게 할수 있을까?
 
