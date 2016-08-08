@@ -179,7 +179,7 @@ Node Stream과 Processing Stream을 구분할 수 있는 방법
 Processing Stream: 생성자의 아규먼트에는 NodeStream이 전달됨.
 (Reader/Writer, InputStream/OutputStream)
 
-##Node Stream만 써서 입출력 시간 계산해보고 Processing Stream 써서 입출력 시간 계산해서 얼마나 빠른지 확인해보겠다.
+###Node Stream만 써서 입출력 시간 계산 vs Processing Stream 써서 입출력 시간 계산
 
 ##InputStreamReader
 
@@ -275,7 +275,11 @@ http는 비연결적 지향적 프로토콜 리퀘스트 받으면 응답주고 
 - 비연결 지향적 프로토콜이라서 사용자정보가 유지가 안된다.
 
 브라우저로 로그인했음. 사이트 접근해보면 session이나 쿠키가 없다 생각해보면 사용자정보를 기억못함.
-사용자의 정보가 얘는 얘고 사용자정보 저장하는 보조적인 것이 필요함. 세션은 서버의 메모리상에 저장되는것. 쿠키는 웹브라우저에 저장되는 것.
+
+사용자의 정보가 얘는 얘고 사용자정보 저장하는 보조적인 것이 필요함. 
+
+세션은 서버의 메모리상에 저장되는것. 쿠키는 웹브라우저에 저장되는 것.
+
 was상 메모리에 정보가 남아있음. 로그아웃하면 세션의 메모리 사라짐.
 
 ex) 메세지 주고받는동안 연결되어있어야함.
