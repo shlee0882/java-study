@@ -218,12 +218,17 @@ transient 가져오지않음.
 꼭 알아야할 메서드
 
 스레드의
+
 - 실행
+
 - 실행대기
+
 - 일시정지
 
 - 일시정지 되었다가 실행대기 상태 만들려면 notify()나 notifyall()
+
 - 실행 중이었다가 멈추게 하려면 sleep()
+
 - join과 wait()와 notify() 메서드를 써보겠다.
 
 스레드로 runnable implements, 스레드 상속받거나
