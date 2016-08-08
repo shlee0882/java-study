@@ -190,10 +190,55 @@ ICE(얼음)  냉동실에
 
 objectinputstream에 readobject(), writeobject()
 
-![serialize](../resources/serialize.JPG)
+![serialize](../resources/serialize.jpg)
 
 serializable이라는 인터페이스가 있는데 implements를 받아야함.
 
 서로 객체를 주고받는 스트림이 objectinputoutstream이다. 
 
 objectinputoutstream을 쓰려면 클래스에서 반드시 시리얼라이저블이라는 인터페이스를 implements 받아야한다.
+
+readUTF()
+writeUTF()
+
+네트워크에서 통신하는데 한가지 형식의 데이터타입만 주고받고 싶으면 사용자가 정의해서 만들수있음.
+사용자가 객체를 만들어서 네트워크로 통신하려면 serialize implements 받아야함.
+객체 덩어리채 주고 받음. 
+
+큰 얼음덩어리를 쪼개는 과정 -> 객체 직렬화 해야함.
+
+보낼땐 일렬로 늘여세워서 직렬화해 보내고 받은 객체 직렬화를 복원해서 읽어야함.
+
+chap18 -> Student.java, TestSerialization.java
+
+transient 가져오지않음.
+
+##스레드 상태제어
+
+꼭 알아야할 메서드
+
+스레드의
+- 실행
+- 실행대기
+- 일시정지
+
+- 일시정지 되었다가 실행대기 상태 만들려면 notify()나 notifyall()
+- 실행 중이었다가 멈추게 하려면 sleep()
+- join과 wait()와 notify() 메서드를 써보겠다.
+
+스레드로 runnable implements, 스레드 상속받거나
+
+익명 클래스로 하는 annonymous class
+
+- join() 사용안하면 사용자정의 스레드 끝날때까지 메인스레드가 기다려주지 않는다.
+
+- join() 사용하면 사용자정의스레드가 종료될때까지 메인스레드가 기다려준다.
+
+- 파일을 카피하는 스레드(사용자정의 스레드)가 끝날때까지 메인스레드는 기다려줘라.
+
+join() 사용안하니깐 측정시간이 안나왔음.
+
+상태제어 메소드 join() 
+
+
+##소켓
