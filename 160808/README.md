@@ -82,19 +82,13 @@ class MyThreadJob implements Runnable{}
 }
 
 Runnable job = new BeepOuter().newMyThreadJob();
-
 Thread t1 = new Thread(job);
-
 // annoymous Inner Class는 클래스명이 없으므로.. 부모클래스의 이름을 사용함
-
 // 자기 이름 없으니 부모이름 씀.
-
 // annoymous class는 선언과 동시에 생성하고 부모가 있는 클래스를 주로 사용함. 
 
 Thread t2 = new MyThread(new Runnable(){
-
  run(){//런메소드 구현};
-
 });
 
 // 어노니클래스는 왜쓰지? 별도의 클래스 굉장히 많이 써야하는데 내부에서 잠깐쓰고 일회용 클래스라 생각하면 됨.
@@ -103,7 +97,6 @@ Thread t2 = new MyThread(new Runnable(){
 ##IO(Input/Output) Stream (java.io package)
 
 스트림을 통해서 데이터 흘려보냄
-
 출력하면 읽어들이고 스트림의 특징 잘 이해해야함.
 
 데이터는 출발지에서 도착지로 들어감. 출발지는 sync 도착지는 destination
@@ -169,5 +162,38 @@ Node Stream과 Processing Stream을 구분할 수 있는 방법
 Processing Stream: 생성자의 아규먼트에는 NodeStream이 전달됨.
 (Reader/Writer, InputStream/OutputStream)
 
-### Node Stream만 사용 입출력 시간 계산, Processing Stream 사용 입출력 시간 계산
+##Node Stream만 써서 입출력 시간 계산해보고 Processing Stream 써서 입출력 시간 계산해서 얼마나 빠른지 확인해보겠다.
 
+##InputStreamReader
+
+InputStream is = System.in; // node stream
+
+Reader reader = new InputStreamReader(is); // processing stream
+
+##ObjectInputStream, ObjectOutputStream
+
+객체를 읽고 쓸수있다.
+코끼리를 냉장고에 넣는 얘기
+
+ObjectInputStream / ObjectOutputStream
+
+객체를 읽어드림
+객체를 쓰는 것임
+
+Object
+ICE(얼음)  냉동실에 
+큰 얼음을 냉동실에 넣으려면 부셔야함.
+01010101 직렬화(serialization) 
+
+직렬화 시켜서 냉장고에 넣어둔다.
+직렬화 한 데이터를 쓰려면 objectoutputstream을 쓰는거고 읽어들이려면 objectinputstream을 쓴다.
+
+objectinputstream에 readobject(), writeobject()
+
+![serialize](../resources/serialize.jpg)
+
+serializable이라는 인터페이스가 있는데 implements를 받아야함.
+
+서로 객체를 주고받는 스트림이 objectinputoutstream이다. 
+
+objectinputoutstream을 쓰려면 클래스에서 반드시 시리얼라이저블이라는 인터페이스를 implements 받아야한다.
