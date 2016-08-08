@@ -190,7 +190,7 @@ ICE(얼음)  냉동실에
 
 objectinputstream에 readobject(), writeobject()
 
-![serialize](../resources/serialize.jpg)
+![serialize](../resources/serialize.JPG)
 
 serializable이라는 인터페이스가 있는데 implements를 받아야함.
 
