@@ -77,18 +77,27 @@ window -> show view -> navigator
 ![anno](../resources/anno.JPG)
 
 Class BeepOuter{
+
 static class MyThread extends Thread{} 
+
 class MyThreadJob implements Runnable{}
+
 }
 
 Runnable job = new BeepOuter().newMyThreadJob();
+
 Thread t1 = new Thread(job);
+
 // annoymous Inner Class는 클래스명이 없으므로.. 부모클래스의 이름을 사용함
+
 // 자기 이름 없으니 부모이름 씀.
+
 // annoymous class는 선언과 동시에 생성하고 부모가 있는 클래스를 주로 사용함. 
 
 Thread t2 = new MyThread(new Runnable(){
+
  run(){//런메소드 구현};
+
 });
 
 // 어노니클래스는 왜쓰지? 별도의 클래스 굉장히 많이 써야하는데 내부에서 잠깐쓰고 일회용 클래스라 생각하면 됨.
