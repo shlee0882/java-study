@@ -181,6 +181,8 @@ Processing Stream: 생성자의 아규먼트에는 NodeStream이 전달됨.
 
 ###Node Stream만 써서 입출력 시간 계산 vs Processing Stream 써서 입출력 시간 계산
 
+**- Processing Stream이 10배 가량 빠르다는 결과 얻음.**
+
 ##InputStreamReader
 
 InputStream is = System.in; // node stream
