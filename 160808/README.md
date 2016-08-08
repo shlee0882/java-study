@@ -169,5 +169,5 @@ Node Stream과 Processing Stream을 구분할 수 있는 방법
 Processing Stream: 생성자의 아규먼트에는 NodeStream이 전달됨.
 (Reader/Writer, InputStream/OutputStream)
 
-## Node Stream만 써서 입출력 시간 계산해보고 Processing Stream 써서 입출력 시간 계산해서 얼마나 빠른지 확인해보겠다.
+### Node Stream만 사용 입출력 시간 계산, Processing Stream 사용 입출력 시간 계산
 
