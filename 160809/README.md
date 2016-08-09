@@ -39,7 +39,7 @@ C:\java\apache-tomcat-8.0.36\webapps\ROOT 폴더에 index.jsp 파일 나오는�
 
 클래스 바로 밑에 선언하는 변수를 전역변수(인스턴스변수) %!로 써서 선언하면 인스턴스변수로 선언된다.
 
-**JSP -> servlet으로 변환 servlet.java로 변환해줌. **
+**JSP -> servlet으로 변환 servlet.java로 변환해줌.**
 
 C:\java\apache-tomcat-8.0.36\work\Catalina\localhost\ROOT\org\apache\jsp 에서 hello_jsp.java 파일을 확인할수 있음.
 
