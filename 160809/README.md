@@ -76,4 +76,20 @@ JSP -> Servlet _jspService() 으로 들어감 ->
 
 ##Action Tag
 
-- <jsp:include.page="" />
+- \<jsp:include.page="" />
+
+-------------------------------------------------------------------------------------------------------------------
+
+##jsp 생성방법
+
+1. 이클립스에서 프로젝트 폴더 -> WebContent -> new JSP File -> hello.jsp html 형식으로 만듬
+
+2. hello.jsp -> run on server 하고 들어가면
+
+http://localhost:8090/JavaEEPrj/hello.jsp 열림.
+
+3. 파일 만들어지는 폴더 위치
+
+C:\java\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\work\Catalina\localhost\JavaEEPrj\org\apache\jsp
+
+4. Scriptlet 태그와 Expression 태그만 써서 작성
