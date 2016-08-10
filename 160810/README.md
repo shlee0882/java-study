@@ -13,14 +13,14 @@
 
 ##폼 메소드 GET,POST
 
-<form method="GET"> 
+\<form method="GET"> 
 
 - 서버상태가 변하지 않는게 get방식 사용
 - get방식은 파라미터 값 길이 제한 있음.
 - 쿼리 내용이 주소에 나타남.
 - 게시판 글보기 
 
-<form method="POST">
+\<form method="POST">
 
 - 데이터 입력해서 DB에 저장한다면 post방식 사용
 - post방식은 파라미터 값 길이 제한 없음.
