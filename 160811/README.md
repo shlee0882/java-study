@@ -150,5 +150,3 @@ distory()
 
 5. result.jsp , special.jsp  페이지 작성
 
-6, 7, 9, 19 책 읽어보기
-
