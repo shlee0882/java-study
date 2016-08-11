@@ -51,7 +51,7 @@ setCharEncoding
 
 ##JSP Tag Syntax
 
-![jsptag](../resources/jsptag.JPG)
+![jsptag](../resources/jsptag2.JPG)
 
 1. Scriptlet 
 \<% %> 자바코드 자유롭게 기술
@@ -72,3 +72,25 @@ setCharEncoding
 \<jsp:forward page=""/> result.jsp로 리퀘스트객체 전달하는 것.
 \<jsp:include page=""/> 페이지 각각 만들고 runtime실행시킬때 화면 레벨에서   합쳐지는 것.
 \<jsp:param />
+
+## \<%@ include %>와 <jsp:include page=""/> 다른점
+
+![include](../resources/include.JPG)
+
+dooly라는 값이 리퀘스트객체로 담겨서 가져감.
+
+
+## setCharEncoding 한번만 설정하고 다음번 설정 안하려면? 필터 사용함.
+
+EncodingFilter
+init()
+dofilter()
+distory()
+
+<filter-mapping>
+  <Filter-name></>
+
+인코딩은 내부적으로 작성하면 가변적이여서 소스고치는 작업 불편하고 위험
+필터를 사용해서 소스안에 인코딩소스를 넣지 않고 빼서 분리작업함.
+
+<%  %>
