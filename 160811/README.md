@@ -97,3 +97,19 @@ distory()
 필터를 사용해서 소스안에 인코딩소스를 넣지 않고 빼서 분리작업함.
 
 <%  %>
+
+
+## 프로젝트 만들기
+
+1. Dynamic web project 생성
+
+2. 입력화면 xx.html 작성
+
+3. xxVO.java 작성 filter복사 web.xml복사, jstl.jar 복사
+
+4. xxServlet.java 작성
+
+5. result.jsp , special.jsp  페이지 작성
+
+6, 7, 9, 19 책 읽어보기
+
