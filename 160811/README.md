@@ -99,8 +99,8 @@ LifeCycle
 
 3. Action
 
-  - \<jsp:useBean id="" class=""/> vo 객체를 javabean이라 핞다. javabean을 사용하는 태그
-리퀘스트 객체에 저장되어있는 객체에 꺼내는것을 함.
+  - \<jsp:useBean id="" class=""/> vo 객체를 javabean이라 한다. 
+  javabean을 사용하는 태그, 리퀘스트 객체에 저장되어있는 객체에 꺼내는것을 함.
 
   - \<jsp:setProperty id="" property=""/> setter메소드 호출
 
