@@ -116,7 +116,8 @@ LifeCycle
 
 ![include](../resources/include.JPG)
 
-dooly라는 값이 리퀘스트객체로 담겨서 가져감.
+\<@include 는 중복되는 코드(변수, 메서드) 들을 모아놓는 것. 코드레벨에서 작업하는 것.
+\<jsp:include>는 뷰를 구성하기 위해 작업하는것.
 
 
 ## setCharEncoding 한번만 설정하고 다음번 설정 안하려면? 필터 사용함.
