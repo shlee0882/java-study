@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body{
+	background: LavenderBlush;
+	padding-left: 700px;
+}
+</style>
+<title>join</title>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<div style="margin:0 auto;">
+	<form method="get" action="MemberServlet"  style="border: 5px solid pink; padding: 10px; width: 350px">
+		아이디 : <input type="text" name="id"/><br><br>
+		비밀번호 : <input type="text" name="pw"/><br><br>
+		성별 : <input type="radio" name="sex" value="man"/>남
+			<input type="radio" name="sex" value="woman"/>여
+			<input type="radio" name="sex" value="hyun"/>조현영<br><br>
+			관심사 : <input type="checkbox" name="interest" value="it" />IT
+			<input type="checkbox" name="interest" value="science" />Science
+			<input type="checkbox" name="interest" value="math" />Math<br><br>
+			
+			<input	type="submit" value="등록" ><br><br>
+	</form>
+</div>
+</body>
+</html>

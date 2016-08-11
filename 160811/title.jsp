@@ -1,0 +1,1 @@
+<h1>${param.myName }</h1> <!-- request.getparameter와 같음. -->
