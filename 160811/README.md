@@ -90,27 +90,27 @@ LifeCycle
 
 2. Directive
 
-- \<%@ page>
+  - \<%@ page>
 
-- \<%@ include %> %붙은 include는 메인이 있고 서브 jsp서블릿으로 변환 완전히 포함시키면서 서블릿 덩어리로 만들어버림. 
+  - \<%@ include %> %붙은 include는 메인이 있고 서브 jsp서블릿으로 변환 완전히 포함시키면서 서블릿 덩어리로 만들어버림. 
 코드레벨에서 합쳐버리는것. 공통으로 들어가야하는 코드 %include 씀.
 
-- \<%@ taglib %> jstl 태그라이브러리 쓰려고 할때 사용
+  - \<%@ taglib %> jstl 태그라이브러리 쓰려고 할때 사용
 
 3. Action
 
-- \<jsp:useBean id="" class=""/> vo 객체를 javabean이라 핞다. javabean을 사용하는 태그
+  - \<jsp:useBean id="" class=""/> vo 객체를 javabean이라 핞다. javabean을 사용하는 태그
 리퀘스트 객체에 저장되어있는 객체에 꺼내는것을 함.
 
-- \<jsp:setProperty id="" property=""/> setter메소드 호출
+  - \<jsp:setProperty id="" property=""/> setter메소드 호출
 
-- \<jsp:getProperty name="" property=""/> getter메소드 호출
+  - \<jsp:getProperty name="" property=""/> getter메소드 호출
 
-- \<jsp:forward page=""/> result.jsp로 리퀘스트객체 전달하는 것.
+  - \<jsp:forward page=""/> result.jsp로 리퀘스트객체 전달하는 것.
 
-- \<jsp:include page=""/> 페이지 각각 만들고 runtime실행시킬때 화면 레벨에서   합쳐지는 것.
+  - \<jsp:include page=""/> 페이지 각각 만들고 runtime실행시킬때 화면 레벨에서   합쳐지는 것.
 
-- \<jsp:param />
+  - \<jsp:param />
 
 ## \<%@ include %>와 <jsp:include page=""/> 다른점
 
