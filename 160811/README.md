@@ -82,6 +82,9 @@ dooly라는 값이 리퀘스트객체로 담겨서 가져감.
 
 ## setCharEncoding 한번만 설정하고 다음번 설정 안하려면? 필터 사용함.
 
+
+![include](../resources/filter.JPG)
+
 EncodingFilter
 init()
 dofilter()
