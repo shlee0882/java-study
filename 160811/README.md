@@ -80,13 +80,13 @@ LifeCycle
 
 1. Scriptlet 
 
-- \<% %> 자바코드 자유롭게 기술
+  - \<% %> 자바코드 자유롭게 기술
 
-- \<%= %> expression 메소드나 변수 출력
+  - \<%= %> expression 메소드나 변수 출력
 
-- \<%! %> declation 선언
+  - \<%! %> declation 선언
 
-- \<%-- %> 주석
+  - \<%-- %> 주석
 
 2. Directive
 
