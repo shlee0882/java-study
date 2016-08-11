@@ -3,32 +3,55 @@
 
 ![servletapi](../resources/servletapi.JPG)
 
-데이터 요청 차이
+- 데이터 요청 차이
 
-GET url append 방식 서버 조회 요청
-POST 크롬 브라우저 개발 툴에 stream 바디부분에 실어져감. 등록 수정 삭제 요청
-DELETE 
+  - GET url append 방식으로 쿼리에 데이터 정보 보임. 서버 조회 요청
 
-key
+  - POST 크롬 브라우저 개발 툴에 stream 바디부분에 보낼 데이터 정보 실어져 감.  등록 수정 삭제 요청
 
-doGet, doPost
+- doGet, doPost
 
-http는 요청 응답 기반 
+- http는 요청 응답 기반 
 
-입력값 뽑아낼떄 getparameter();
-getparameter(values);
+- 입력값 뽑아낼떄 getparameter(); getparameter(values);
 
-sendredirect() 특정 페이지로 가게하는 것.
+- sendredirect() 특정 페이지로 가게하는 것.
 
-getSession() : http 세션객체를 만들어주는것.
+- getSession() : http 세션객체를 만들어주는것.
 
-request쪽 서버 메세지 있었음.
+## Servlet
 
-RequestDispatcher
-forward(request,response)
-include(request,response)
+LifeCycle
+- init()
+- service()
+- destroy()
 
-setCharEncoding
+## GenericServlet
+### service(request,response)
+
+- ServletRequest 요청
+  - getParameter()
+  - getParameterValues()
+  - getRequestDispatcher()
+  - setCharacterEncoding()
+
+- servletResponse 응답
+- sendRedirect()
+
+## HttpServlet
+### doGet(request,response)
+### dopPost(request,response)
+
+- HttpServletRequest
+  - getSession : HttpSession
+
+- HttpServletResponse
+
+--------------------------------------------
+
+- RequestDispatcher
+  - forward(request,response)
+  - include(request,response)
 
 
 ##세션 종류
