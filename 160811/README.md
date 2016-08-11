@@ -124,18 +124,20 @@ dooly라는 값이 리퀘스트객체로 담겨서 가져감.
 
 ![include](../resources/filter.JPG)
 
-EncodingFilter
-init()
-dofilter()
-distory()
+- EncodingFilter
 
-<filter-mapping>
-  <Filter-name></>
+  - init()
 
-인코딩은 내부적으로 작성하면 가변적이여서 소스고치는 작업 불편하고 위험
-필터를 사용해서 소스안에 인코딩소스를 넣지 않고 빼서 분리작업함.
+  - dofilter()
 
-<%  %>
+  - distory()
+
+\<filter-mapping>
+  \<Filter-name></>
+
+**인코딩은 내부적으로 작성하면 가변적이여서 소스고치는 작업 불편하고 위험**
+
+**필터를 사용해서 소스안에 인코딩소스를 넣지 않고 빼서 분리작업함.**
 
 
 ## 프로젝트 만들기
