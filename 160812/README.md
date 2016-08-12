@@ -220,7 +220,9 @@ jdbc를 mybatis로 연결시킨다. 연결시키고 junit을 이용해 테스트
 
 3. 만들것. dao패키지  VO 패키지 ,테스트 패키지 , mybatis.config 패키지, mybatis.util 패키지 복사 붙여넣기
 
-4. dao패키지 안데 DAOImpl.java 생성, db.properties에 서버정보 입력, 
+4. dao패키지 안데 DAOImpl.java 생성, db.properties에 서버정보 입력, Emp.xml 처리할 쿼리문 입력, SqlMapConfig가 db.properties와 Emp.xml 포함시킴
+
+5. MybatisConfig 포함
 
 
 
