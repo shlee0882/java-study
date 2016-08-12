@@ -196,3 +196,31 @@ DataSource 에 풀링이 적용된 JDBC 커넥션을 위한 구현체이다. 이
 
 안에 쿼리문을 파싱하지말라는 것이 <![CDATA[ ]]> 이다.
 
+
+---------------------------------------------------------
+
+UserDAO
+
+UserDAOImpl -> mybatis
+
+UserDAOXML -> xml 데이터 읽어서 insert
+
+UserDAOImpl dao;
+new xxDAOImpl dao
+
+
+
+그럼 지금 해야할것이
+
+jdbc를 mybatis로 연결시킨다. 연결시키고 junit을 이용해 테스트
+
+1. 다이나믹 웹프로젝트 만들고 pom.xml dependencies태그 넣고 junit, ojdbc6, mybatis 넣고 jar 추가됨.
+
+2. 디비로부터 데이터를 추출해야한다.
+
+3. 만들것. dao패키지  VO 패키지 ,테스트 패키지 , mybatis.config 패키지, mybatis.util 패키지 복사 붙여넣기
+
+4. dao패키지 안데 DAOImpl.java 생성, db.properties에 서버정보 입력, 
+
+
+
