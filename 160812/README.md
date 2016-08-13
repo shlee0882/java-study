@@ -25,13 +25,13 @@
 
 - Oracle JDBC Driver For Java Oracle.jdbc.driver.OracleDriver Ojdbc6 소스 복사
 
-  - http://mvnrepository.com/ 들어가서 mybatis 검색
+  - :link: http://mvnrepository.com/ 들어가서 mybatis 검색
 
-  - http://mvnrepository.com/artifact/org.mybatis/mybatis/3.4.1 Maven 소스 복사
+  - :link: http://mvnrepository.com/artifact/org.mybatis/mybatis/3.4.1 Maven 소스 복사
 
-  - http://mvnrepository.com/artifact/com.hynnet/oracle-driver-ojdbc6/12.1.0.1
+  - :link: http://mvnrepository.com/artifact/com.hynnet/oracle-driver-ojdbc6/12.1.0.1
 
-  - pom.xml에 dependency 붙여넣기
+  - :link: pom.xml에 dependency 붙여넣기
 
 
 넣어주면 이클립스에서 jar파일 가져옴.
