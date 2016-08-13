@@ -10,6 +10,7 @@
 
 :four: Maven에서 의존성 라이브러리 관리는 porm.xml 파일을 수정한다 -> 빌드한다를 순환하며 반복한다.
 
+/play secret
 
 ##메이븐 저장소 만들기
 
@@ -31,7 +32,7 @@
 
   - :link: http://mvnrepository.com/artifact/com.hynnet/oracle-driver-ojdbc6/12.1.0.1
 
-  - :link: pom.xml에 dependency 붙여넣기
+  - pom.xml에 dependency 붙여넣기
 
 
 넣어주면 이클립스에서 jar파일 가져옴.
