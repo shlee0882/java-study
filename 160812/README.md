@@ -128,6 +128,7 @@ object users테이블에 1row랑 자바객체랑 맵핑된다.
 
 **만약 JDBC를 썻으면 일일히 하나하나 맵핑해야했음.**
 
+```java
 while(rs.next()){
 
  user = new userVO(rs.getString("user"),rs.getString("name")
@@ -135,7 +136,7 @@ while(rs.next()){
  list.add(user); 
 
 }
-
+```
 위 과정 안해도된다.
 
 result type에 uservo라고 써주면 다 저장해준다.
