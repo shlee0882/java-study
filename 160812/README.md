@@ -146,6 +146,7 @@ Insert는 어떻게 하나?
 
 화면에서 입력받은 내용 담고 있는 객체 VO 들어오면
 
+```java
 insert(userVO user){
 
 insertintoUsers values(?,?,?,?);
@@ -157,7 +158,7 @@ setInt(2,user.getAge());
 pstmt.excuteUpdate();
 
 }
-
+```
 맵핑하는 작업을 일일히 했다.
 
 그런데 안해도됨.
