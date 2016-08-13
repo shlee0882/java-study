@@ -126,27 +126,36 @@ object users테이블에 1row랑 자바객체랑 맵핑된다.
 
 클래스로 부터 여러개의 객체를 row와 object
 
-만약 jdbc를 썻으면 일일히 하나하나 맵핑해야했음.
+**만약 JDBC를 썻으면 일일히 하나하나 맵핑해야했음.**
 
 while(rs.next()){
+
  user = new userVO(rs.getString("user"),rs.getString("name")
+
  list.add(user); 
+
 }
 
 위 과정 안해도된다.
 
 result type에 uservo라고 써주면 다 저장해준다.
+
 list객체에 알아서 해줌.
 
 Insert는 어떻게 하나?
 
 화면에서 입력받은 내용 담고 있는 객체 VO 들어오면
+
 insert(userVO user){
 
 insertintoUsers values(?,?,?,?);
+
 pstmt.setString(1,user.getUserId,id)
+
 setInt(2,user.getAge());
+
 pstmt.excuteUpdate();
+
 }
 
 맵핑하는 작업을 일일히 했다.
