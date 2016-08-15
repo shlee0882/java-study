@@ -144,6 +144,8 @@ LifeCycle
 
 ## 프로젝트 만들기
 
+![myservlet](../resources/myservlet.JPG)
+
 1. Dynamic web project 생성
 
 2. 입력화면 xx.html 작성
