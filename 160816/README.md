@@ -6,7 +6,7 @@
 
 Seperation of Concerns
 
-:1: Model1 아키텍처 
+:one: Model1 아키텍처 
 
 - Model - java
 - Controller - jsp
@@ -14,7 +14,7 @@ Seperation of Concerns
 
 jsp안에서 <%%> 많아짐. jsp안에다 자바코드 많이 넣어서 코딩함.
 
-:2: Model2 아키텍처 
+:two: Model2 아키텍처 
 
 - Model - java
 - Controller - Servlet
@@ -37,11 +37,11 @@ dao 객체가 doPost doGet 할때마다 계속 만들어지면 메모리 낭비 
 
 Servlet 클래스
 
-:1: init() - servlet객체 생성후에 1번 호출되는 메서드
+:one: init() - servlet객체 생성후에 1번 호출되는 메서드
 
-:2: service() - doGet / doPost() 메서드 사용자가 요청을 보낼때마다 호출되는 메서드
+:two: service() - doGet / doPost() 메서드 사용자가 요청을 보낼때마다 호출되는 메서드
 
-:3: destory() - servlet객체 gc(가비지 콜렉팅)되기 전에 호출되는 메서드
+:three: destory() - servlet객체 gc(가비지 콜렉팅)되기 전에 호출되는 메서드
 
 GenericServlet
 
