@@ -175,7 +175,7 @@ Hello 클래스는 상위 인터페이스 상위 클래스하고만 커뮤니케
 
 IoC 컨테이너
 
-\<<interface>>|
+\<\<interface>>|
 ---------------------|
 BeanFactory|
 getBean("id")|
