@@ -158,10 +158,13 @@ print() - 구현
 스프링 프레임워크가 객체를 생성해주는 것을 Bean이라고 한다.
 
 new hello 하지 않고 bean으로 등록해주면 ioc 컨테이너에게 getbean한다.
-의존설정은 spring bean configuration xml file
+
+의존설정은 spring bean configuration  -> xml file 생성
 
 coffeeBean으로 등록한게 3개
+
 Spring Bean Configuration XML file
+
 ````java
 <bean id="hello" class="xxx.xx.Hello">
     <property name="printer"  ref="stringPrinter"/> <!-- set 빼준것.-->
