@@ -61,10 +61,9 @@ Maven -> Update Project -> Force Update of Snapshots/Releases 체크 하면 오�
  
 - **Framework는 Library 적인 요소를 포함하고 있음. 개발자가 작성한 클래스를 framework가 객체를 생성해주고 그 객체의 메서드를 호출해준다. - 주도권 : framework**
 
+![DL](../resources/DL.JPG)
+
 - Spring Framework는 IoC(Invension of Control) 컨테이너를 제공한다. - 제어의 역전
-
-![DI_BigPicture](../resources/DI_BigPicture.JPG)
-
 - IoC구현하는 방법이 DI, DL이 있다.
 - DI는 Dependency Injection 의존관계 주입(투입)
 - DL은 Dependency Lookup 의존관계 검색
@@ -95,8 +94,6 @@ getConnection()
 DataSource ds = new BasicDataSource()
 ````
 특정벤더에 종속되게 소스안에 박아쓰게됨
-
-![DL](../resources/DL.JPG)
 
 DL은 해당되는 
 
