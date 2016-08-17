@@ -202,9 +202,9 @@ xml쓰면서 버전관리하다보니 개발자끼리 문제 발생
 ##Bean등록을 위한 Annotation(spring 2.5ver이후) 
 
 1. @Component
-2. @Repository
-3. @Service
-4. @Controller
+2. @Repository : DAO(Data Access logic)클래스구나. 
+3. @Service : Service클래스(Biz Logic) 구나. 분리 시 재사용가능
+4. @Controller : Controller클래스(View와 Service 연결해주는 역할)
 
 ##Bean 사이의 의존관계(dependency)를 위한 Annotation 있다.
 
@@ -257,3 +257,12 @@ public class ConsolePrinter{
 
 ````
 
+spring bean configuration file -> annot.xml 파일 만듬 -> beans,context 체크체크
+
+##Test를 좀더 편하게 하는 프레임워크 다운받자
+
+메이븐에서 spring test 검색
+
+http://mvnrepository.com/artifact/org.springframework/spring-test  3.2.17 다운
+
+spring.di.annont 패키지와 spring.di.annot.test 패키지 생성
