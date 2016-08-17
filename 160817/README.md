@@ -82,13 +82,13 @@ tomcat
 
 BasicDataSource|
 -----------------------|
-getConnection()
+getConnection()|
 
 oracle
 
 OracleDataSource|
 -------------------------|
-getConnection()
+getConnection()|
 
 ````java
 DataSource ds = new BasicDataSource()
@@ -97,7 +97,9 @@ DataSource ds = new BasicDataSource()
 
 DL은 해당되는 
 
-Map key | value|
+Map 
+
+key | value|
 -----------|----------|
 jdbc/datasource |new BasicDataSource|
 
@@ -141,7 +143,7 @@ Hello예제
 
 Hello 
 
-\<<interface>>
+\<\<interface>><br>
 Printer
 print()
 
@@ -191,9 +193,13 @@ IoC 컨테이너
 BeanFactory|
 getBean("id")|
 getBean("id.class")|
+
 ↑
+
 application 
+
 ↑
+
 GenericApplicationContext, WebAC, 
 
 getBean - 생성된 bean을 가져옴.
