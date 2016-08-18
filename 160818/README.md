@@ -13,7 +13,7 @@ values를 properties파일로 빼서 사용하겠다.
 1. Copy & Paste
 2. 함수 or 메서드 
 3. 상속(Inheritance)
-4. AOP(Aspect Oriented Programming)
+4. AOP(Aspect Oriented Programming 관점지향프로그래밍, 객체지향을 더 객체지향으로)
 
 공통메서드(aspect) 앞뒤로 끼어넣기가 AOP이다
 
@@ -35,7 +35,7 @@ AOP종류
 
 우리가 배울건 SpringAOP
 
-Advice + PointCut = Aspect
+Advice + PointCut(명령어) = Aspect
 
 1. Advice : 부가기능을 정의한 클래스(코드)
 
@@ -56,13 +56,13 @@ SpringAOP의 JoinPoint는 Target의 메서드가 Runtime에 호출되는 시점
 
 5. Aspect(=Advisor)
 
-Advisor는 Spring Aop에서만 사용되는 용어
+- Advisor는 Spring Aop에서만 사용되는 용어
 
-Advice + Pointcut = Aspect
+- Advice + Pointcut = Aspect
 
-타겟이 어드바이스(로그 메서드) 호출
+- 타겟이 어드바이스(로그 메서드) 호출
 
-advice가 target을 선택해 연결해주는것.
+- advice가 target을 선택해 연결해주는것.
 
 ##기존방식
 
@@ -72,7 +72,7 @@ advice에서 log메서드 만들었어 인자 2개 , 3개 만듬 , target 소스
 
 target에는 어노테이션(@) 있거나  xml작성되있거나 pointcut 작성 되어있음.
 
-## 
+---------------------------------------------------------------------------------
 
 Maven Repository 에서 aspectj runtime, sprint aop 검색해서 받기
 
@@ -103,3 +103,32 @@ http://mvnrepository.com/artifact/org.springframework/spring-aop/3.2.17.RELEASE
     - 작성한 Advice를 <bean>으로 등록
     - PointCut 표현식 정의
 
+##POJO (Plain Old Java Object)
+
+순수 객체 만듬 POJO
+
+##PointCut
+
+.은 바로 밑 파일 하나랑 맵핑 된다.
+.. 은 하위 패키지
+
+##Log4j(Log For Java)
+
+- 자바를 위한 로그
+
+sysout.prinln 찍으면 운영에 넘기기전에 필요없는 로그 없애야한다.
+쓰잘데기 없는 로그 찍히는 것.
+
+- 로그찍는것도 레벨을 두자
+    - FATAL
+    - ERROR
+    - WARN
+    - INFO
+
+- 메이븐에서 log4j 검색 pom.xml에 복사
+
+##log4j 구성요소
+
+- Logger  - 로그파일 작성 관리
+- Appender - Logging 메세지를 어디에 출력 또는 저장할지 결정하는 역할
+- Layout - Logging 메세지
