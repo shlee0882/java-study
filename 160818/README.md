@@ -44,9 +44,9 @@ Advice(부가기능)를 적용할 대상
 
 3. PointCut : Advice(부가기능)를 어떤 Target(핵심기능)에 적용할지를 선택하는 정규 표현식, 선별하는 식
 
-pointcut에 excution(* myspring user * )
-
 4. JoinPoint 
+
+pointcut에 excution(* myspring user * )
 
 Advice + Target 어드바이스가 합쳐지는 지점.
 
