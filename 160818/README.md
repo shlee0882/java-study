@@ -56,13 +56,13 @@ SpringAOP의 JoinPoint는 Target의 메서드가 Runtime에 호출되는 시점
 
 5. Aspect(=Advisor)
 
-- Advisor는 Spring Aop에서만 사용되는 용어
+    - Advisor는 Spring Aop에서만 사용되는 용어
 
-- Advice + Pointcut = Aspect
+    - Advice + Pointcut = Aspect
 
-- 타겟이 어드바이스(로그 메서드) 호출
+    - 타겟이 어드바이스(로그 메서드) 호출
 
-- advice가 target을 선택해 연결해주는것.
+    - advice가 target을 선택해 연결해주는것.
 
 ##기존방식
 
