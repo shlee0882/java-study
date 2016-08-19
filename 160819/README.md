@@ -116,5 +116,53 @@ MyBatis - Spring 연동하는 Application 작성절차
 
 4. Mapping 파일 정보 설정은 Spring been conf 파일에 설정한다.
 
+##지금 까지 한것 중간 정리
 
+- Java-oop개념
+- SQL 연습(join, subquery, group by) orange tool 써봄, 
+- JDBC 함.
+- DataBase 연동해서 어플리케이션 레벨에서 조작하려고 JDBC씀.
+- JDBC가 똑같은 것을 반복하는 작업 많아서 low-level이어서 실무에서 안쓴다.
+- 증권 사고팔고 해보는것 해봄
+- Servlet/JSP 해봄. 웹어플리케이션 사용해볼려고 해봄. <%%> jsp태그 공부, session scope, request scope
+- jsp를 더 간단하게 만들기 위해 el, jstl 해봄.
+- JDBC, MyBatis 공부함.
+- Servlet에 MyBatis 연결해봄.
+- Spring을 배움
+- MyBatis랑 Spring 왜 연동하냐?
+- Servlet이 SpringMVC로 바뀐것.
+- SpringMVC에서는 MyBatis를 바로 부를수 없기 때문에 MyBatis와 Spring을 연동하는 라이브러리를 써서 Spring에서 만든 Controller와 Mybatis를 연결했던 DAO를 연결함. 
+- MyBatis-Spring을 써서 Spring이 MyBatis-Spring을 부르고 MyBatis-Spring은 MyBatis를 부르는 것.
+- DI 가 Basic 이고 그걸 확장 한 고급개념인 AOP, SpringMVC, MyBatis-Spring, Log4j 봄.
+
+
+Mybatis Spring » 1.2.5
+http://mvnrepository.com/artifact/org.mybatis/mybatis-spring/1.2.5
+
+commons dbcp(data base connection pool)
+
+-----------------------------------------------------------------
+
+1. TestUserBean.java 생성
+2. beans.xml datasource
+3. db.properties
+
+
+---------------------------------------------------------
+
+![mybatis-spring3](../resources/mybatis-spring3.JPG)
+
+SqlSessionFactoryBean
+
+SqlSessionFactoryBuilder
+
+SqlSessionFactory
+
+SqlSession - 기존 MyBatis에서 제공함.
+
+SqlSessionTemplate - MyBatis-Spring에서 제공
+
+
+##Spring JDBC
+http://mvnrepository.com/artifact/org.springframework/spring-jdbc/3.2.17.RELEASE
 
