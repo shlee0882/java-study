@@ -2,8 +2,6 @@
 
 ##SpringMVC : Controller역할을 하는 Servlet 제공함.
 
-![springMVC](../resources/springMVC.JPG)
-
 DI, AOP 등 일반적인 자바의 POJO형태로 만들었다.
 web.xml에 설정
 
