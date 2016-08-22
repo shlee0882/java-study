@@ -151,28 +151,201 @@ div 밑에 후손까지 다가져온다.
 ````
 ##Spring 나머지공부 정리
 
-Server
+Server - 톰캣 서버 |
+-----------------------|
+ProjectServer - 프로젝트 안의 서버|
+-----------------------------------|
+web.xml|
 
-ProjectServer
+- run이 시작했을때 web.xml이 가장먼저 시작된다.
 
-Web.xml
+- 스프링 MVC DipatcherServlet
 
-run이 시작했을때 web.xml이 가장먼저 시작된다.
+- 리스트 누르면 Dispatcher 서블릿으로 감.
 
-스프링MVC DipatcherServlet
+----------------------------------------------------------------------------------------
 
-리스트 누르면 Dispatcher 서블릿으로 가
+1. index.jsp 의 리스트 누를시 list.do로 정의된 곳을 찾음.
 
-model은 request이다.
+````jsp
+
+<p><a href="list.do">리스트</a></p>
+<p><a href="add.do">추가</a></p>
+<p><a href="update.do">업데이트</a></p>
+<p><a href="delete.do">삭제</a></p>
+
+````
+
+2. RequestMapping이 되어있는 Controller.java로 찾아가게됨.
+
+````java
+
+public class Controller {
+
+  @Autowired
+  EmpDAO DAO;
+  
+  @RequestMapping("list.do")
+  public String listShow(Model model){
+    List<EmpwebVO> list=DAO.selectAll();
+    model.addAttribute("list", list);
+    return "list.jsp";
+    
+    }
+  }
+
+````
+- DAO는 EmpwebImpl.java의 인터페이스이다.
+- EmpwebImpl에는 CRUD 메서드가 만들어진 곳이다.
+- list로 해당 리스트를 받아오고 model은 request이다. model을 사용해 list의 담긴 데이터를 list라는 변수에 저장시킨다.
+- 데이터를 model에 addAttribute 이후 list.jsp로 보내버린다.
 
 
+3. list.jsp에서 model addAttribute의 list라는 변수를 사용해 저장한 리스트 데이터 값을 사용한다.
+
+````jsp
 
 
-필터, 리스너, 디스패쳐서블릿
+<c:forEach var="emp" items="${list}">
+
+<p>${emp.empid} ,    ${emp.empname} ,  ${emp.empdept}  ,${emp.emphireddate}  ,${emp.empsalary}  
 
 
+</c:forEach>
+
+````
+
+- ${emp.empid},  ${emp.empname} ... 등등은 getempid, getempname 의 메서드를 호출하는 것이다.
+- jstl의 foreach를 써서 반복한다.
+
+----------------------------------------------------------------------------------------------
+
+그럼 어떻게 @어노테이션을 사용하고 Autowired 되서 서로 왔다갔다 할수 있을까?
+
+````xml
+
+<!-- db.properties 경로 연결 -->
+<context:property-placeholder  location="classpath:empweb/config/db.properties"/>
+
+<!-- annotation 사용 위해(쓰기위해) component-scan 쓰는것이다. -->
+<context:component-scan base-package="empweb"></context:component-scan>
 
 
+````
+
+- beans.xml - BasicDataSource, SqlSessionFactoryBean, SqlSessionTemplate 사용
+  - BasicDataSource : db.properties 의 내용 연결 시켜줌.
+
+````xml
+
+  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+    p:driverClassName="${db.driver}" p:url="${db.url}" p:username="${db.username}" 
+    p:password="${db.password}" p:maxActive="${db.max}" p:minIdle="${db.min}" /> 
+
+````
+- setdriverClassName, seturl, setusername ... 메서드가 있다.
+     
+
+````xml
+
+<bean id="sqlSessionFacory" class="org.mybatis.spring.SqlSessionFactoryBean">
+  <property name="dataSource" ref="dataSource"></property>
+  <property name="configLocation" value="classpath:empweb/config/mybatisConfig.xml"></property>
+  <property name="mapperLocations" ><!-- user.xml -->
+    <list>
+      <value>classpath:empweb/config/Empweb.xml</value>
+    </list>
+  </property>
+</bean>
+
+````
+
+- SqlSessionFactoryBean은 db의 정보를 얻어오고, empVO 연결  ,sql쿼리문을 작성한 user.xml연결한다.
+
+````xml
+
+<bean id="sqlTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+<constructor-arg  ref="sqlSessionFactory"></constructor-arg>
+</bean>
+
+````
+- SqlSessionTemplate에 최종적으로 연결시켜준다.
 
 
+--------------------------------------------------------------------------------
 
+그럼 beans.xml을 이렇게 다 구성하고 @autowired가 잘되는지 테스트해보아야 한다.
+
+테스트가 완료되면 프로젝트 서버(web.xml)로 가서 beans.xml을 연결해줘야 한다.
+
+-------------------------------------------------------------------------------
+
+web.xml은 크게 3개로 구성된다.
+
+필터 - CharacterEncodingFilter
+리스너 - ContextLoaderListener
+디스패쳐서블릿 - DispatcherServlet
+
+````xml
+
+  <filter><!-- 인코딩하는 것. -->
+    <filter-name>EncodingHangle</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name><!-- setencoding 메서드임. -->
+      <param-value>utf-8</param-value>
+    </init-param>
+  </filter>
+  
+  <filter-mapping>
+  <filter-name>EncodingHangle</filter-name>
+  <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+````
+
+- 필터 클래스는 정확히 적어줘야 한다. 
+- param-name은 setencoding이라는 메서드 이다.
+- setencoding의 값은 utf-8로 설정
+
+````xml
+
+ <!-- needed for ContextLoaderListener -->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:empweb/config/beans.xml</param-value>
+  </context-param>
+
+  <!-- Bootstraps the root web application context before servlet initialization -->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
+````
+
+- ContextLoaderListener 추가시 다 생성된다.
+- beans.xml의 파일경로를 지정해준다.
+
+````xml
+
+  <!-- The front controller of this Spring Web application, responsible for handling all application requests -->
+  <servlet>
+    <servlet-name>springDispatcherServlet</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath:empweb/config/beans.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <!-- Map all requests to the DispatcherServlet for handling -->
+  <servlet-mapping>
+    <servlet-name>springDispatcherServlet</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+
+````
+
+- bans.xml 경로 지정해준다.
+- .do로 끝나는 형식을 모두 처리하겠다 라는 뜻이다.
