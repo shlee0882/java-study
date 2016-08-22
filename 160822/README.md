@@ -75,15 +75,15 @@ XML은 구조가 있고 데이터가 있고 스타일이 있다.
 
 ##SpringMVC 기반에서 JSON 포맷으로 data를 작성하는 방법
 
-1. Jackson Library 다운로드 -> Json data를 Handling 하기 위한 API
+:one: Jackson Library 다운로드 -> Json data를 Handling 하기 위한 API
 
-2. Spring bean 설정 파일(beans.xml)에  MappingJacksonHttpMessageConverter를 bean으로 등록
+:two: Spring bean 설정 파일(beans.xml)에  MappingJacksonHttpMessageConverter를 bean으로 등록
 - MappingJacksonHttpMessageConverter가 JSON 포맷의 data를 HttpMessage로 변환해주는 역할
 
 편리한 Tag 사용
 - \<MVC:annotation-driven />
 
-3. @ResponseBody 어노테이션 사용
+:three: @ResponseBody 어노테이션 사용
 Controller 클래스 내부에 선언된 메서드에서 @ResponseBody 사용
 @ResponseBody는 server가 client에게 전달하는 response를 java object가 아니라 text형태의 포맷으로 변환해주는 역할이다.
 
