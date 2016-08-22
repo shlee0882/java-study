@@ -154,7 +154,6 @@ div 밑에 후손까지 다가져온다.
 Server - 톰캣 서버 |
 -----------------------|
 ProjectServer - 프로젝트 안의 서버|
------------------------------------|
 web.xml|
 
 - run이 시작했을때 web.xml이 가장먼저 시작된다.
@@ -165,7 +164,7 @@ web.xml|
 
 ----------------------------------------------------------------------------------------
 
-1. index.jsp 의 리스트 누를시 list.do로 정의된 곳을 찾음.
+:one: index.jsp 의 리스트 누를시 list.do로 정의된 곳을 찾음.
 
 ````jsp
 
@@ -176,7 +175,7 @@ web.xml|
 
 ````
 
-2. RequestMapping이 되어있는 Controller.java로 찾아가게됨.
+:two: RequestMapping이 되어있는 Controller.java로 찾아가게됨.
 
 ````java
 
@@ -201,7 +200,7 @@ public class Controller {
 - 데이터를 model에 addAttribute 이후 list.jsp로 보내버린다.
 
 
-3. list.jsp에서 model addAttribute의 list라는 변수를 사용해 저장한 리스트 데이터 값을 사용한다.
+:three: list.jsp에서 model addAttribute의 list라는 변수를 사용해 저장한 리스트 데이터 값을 사용한다.
 
 ````jsp
 
@@ -283,7 +282,9 @@ public class Controller {
 web.xml은 크게 3개로 구성된다.
 
 필터 - CharacterEncodingFilter
+
 리스너 - ContextLoaderListener
+
 디스패쳐서블릿 - DispatcherServlet
 
 ````xml
