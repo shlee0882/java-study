@@ -164,3 +164,34 @@ SqlSessionTemplate - MyBatis-Spring에서 제공
 ##Spring JDBC
 http://mvnrepository.com/artifact/org.springframework/spring-jdbc/3.2.17.RELEASE
 
+##복습
+
+beans.xml에서 classpath랑 bean등록하는것. List안에 url 맵핑시키는것.
+
+BasicDataSource에 필요한 것
+
+클래스네임,  
+
+p:driver
+
+p는 태그 driverclass는 세터이다. 세터네임이 driverClassName이 있다.
+
+p태그를 안쓰면 일일히 property name으로 주는것이다.
+
+드라이버 url name 패스워드 최대 최소 라는 것은.
+
+bean이라는 것은 String a= new String(); 이다.
+
+
+SqlSessionFactory, 
+
+String a = new String(new String("hello"));
+
+객체를 넣어 만들수 있다. 
+
+String a = new String("a");
+
+
+1. spring web mvc, Spring JDBC, junit, Spring Context, commons dbcp, jstl, maven 다운
+2. EmpwebVO.java , db.properties, spring 파일로 beans.xml 생성
+3. 
