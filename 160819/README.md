@@ -201,12 +201,21 @@ String a = new String("a");
 3. 
 
 Dependencies 추가할 목록
+
 -spring web mvc
+
 -spring jdbc
+
 -junit
+
 -spring context junit
+
 -mybatis
+
 -mybatis-spring
+
 -oracle jdbc6
+
 -commons 유체
+
 -jstl
