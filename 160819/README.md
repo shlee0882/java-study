@@ -76,9 +76,13 @@ Model은 request랑 같다.
 
 
 web.xml - 1 서버가 열리면 바로 시작 맵핑하면서 모든게 등록
+
 beans.xml  - 2 이게 등록됨 web.xml에서 등록됨.
+
 index.jsp - 3 시작하면 controller로 가고
+
 HelloController.java - 4 시작하면
+
 hello.jsp - 5 마지막
 
 -------------------------------------------------------
