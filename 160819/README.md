@@ -199,3 +199,14 @@ String a = new String("a");
 1. spring web mvc, Spring JDBC, junit, Spring Context, commons dbcp, jstl, maven 다운
 2. EmpwebVO.java , db.properties, spring 파일로 beans.xml 생성
 3. 
+
+Dependencies 추가할 목록
+-spring web mvc
+-spring jdbc
+-junit
+-spring context junit
+-mybatis
+-mybatis-spring
+-oracle jdbc6
+-commons 유체
+-jstl
